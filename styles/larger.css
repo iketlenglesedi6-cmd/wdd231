@@ -1,0 +1,49 @@
+﻿@media (min-width: 720px) {
+  .site-header,
+  main,
+  footer {
+    width: min(1120px, calc(100% - 2.5rem));
+  }
+
+  .brand-row {
+    border-radius: 0.9rem 0.9rem 0 0;
+    padding: 0.78rem 1rem;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    border-top: 0;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    min-width: 9.5rem;
+    text-align: center;
+    border-top: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0.95rem 1.05rem;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .filters {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+  }
+}
+
+

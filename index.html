@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 course home page with responsive navigation and course filtering.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>WDD 231: Web Frontend Development I</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-row">
+      <div class="brand">
+        <img class="brand-logo" src="images/website-logo.svg" alt="Website logo for Lesedi Pride Iketleng">
+        <span class="site-name">BYU-I | Lesedi Pride Iketleng</span>
+      </div>
+      <button id="menu-button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    </div>
+    <nav id="primary-nav" class="nav" aria-label="Primary">
+      <a href="#" aria-current="page">Home</a>
+      <a href="chamber/index.html">Chamber</a>
+      <a href="final/index.html">Final</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="intro-grid">
+      <section id="about" class="panel">
+        <h2>About Me</h2>
+        <p>
+          I am Lesedi Pride Iketleng, a learner and growing frontend developer. I started coding by
+          building structured pages with HTML and styling them with CSS, then added JavaScript to make
+          my projects interactive. One of my earlier projects was a rafting company website, where I
+          practiced page layout, navigation, and responsive design. In WDD131, I also created a poetry
+          website project without a backend. I am now improving that project toward a more public-ready
+          standard by strengthening the interface, structure, and overall user experience across mobile
+          and desktop screens.
+        </p>
+      </section>
+
+      <section class="panel photo-panel">
+        <h2>Student Photo</h2>
+        <figure class="photo-figure">
+          <img class="photo-placeholder" src="images/lesedi-photo.jpeg" alt="Photo of Lesedi Pride Iketleng">
+          <figcaption>Lesedi Pride Iketleng</figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <section id="courses" class="panel">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filters">
+        <button type="button" data-filter="all" class="is-active">All</button>
+        <button type="button" data-filter="CSE">CSE</button>
+        <button type="button" data-filter="WDD">WDD</button>
+      </div>
+      <div id="course-list" class="course-list"></div>
+      <p id="total-credits" class="total-credits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/lesedi-iketleng" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="images/linkedin-logo.svg" alt="LinkedIn logo">
+      </a>
+      <a href="https://github.com/iketlenglesedi6-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="images/github-logo.svg" alt="GitHub logo">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <img src="images/instagram-logo.svg" alt="Instagram logo">
+      </a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Lesedi Pride Iketleng • Johannesburg, Gauteng</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+
+
