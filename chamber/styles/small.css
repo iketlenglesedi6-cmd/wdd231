@@ -203,11 +203,11 @@ main {
   font-weight: 700;
   letter-spacing: 0.38em;
   text-transform: uppercase;
-  color: var(--color-accent-strong);
+  color: #0f1217;
   margin-bottom: 0.6rem;
   display: inline-block;
   padding: 0.15rem 0.5rem;
-  background: rgba(202, 160, 96, 0.15);
+  background: rgba(202, 160, 96, 0.85);
   border-radius: 999px;
 }
 
@@ -282,8 +282,8 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: var(--color-ink);
-  background: rgba(202, 160, 96, 0.2);
+  color: #0f1217;
+  background: rgba(202, 160, 96, 0.85);
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
   font-weight: 600;
@@ -600,8 +600,8 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(202, 160, 96, 0.2);
-  color: var(--color-ink);
+  background: rgba(202, 160, 96, 0.85);
+  color: #0f1217;
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
   font-size: 0.85rem;
