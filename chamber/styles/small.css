@@ -15,13 +15,19 @@
   --font-body: "Manrope", sans-serif;
 }
 
+html,
 body {
   font-family: var(--font-body);
   background:
     radial-gradient(circle at top, rgba(40, 46, 58, 0.7) 0%, rgba(15, 18, 23, 0.95) 55%, #0b0e13 100%);
+  background-color: #0f1217;
   color: var(--color-ink);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+p {
+  color: var(--color-ink);
 }
 
 main {
@@ -203,11 +209,12 @@ main {
   font-weight: 700;
   letter-spacing: 0.38em;
   text-transform: uppercase;
-  color: #0f1217;
+  color: var(--color-ink);
   margin-bottom: 0.6rem;
   display: inline-block;
   padding: 0.15rem 0.5rem;
-  background: rgba(202, 160, 96, 0.85);
+  background: #0f1217;
+  border: 1px solid rgba(202, 160, 96, 0.6);
   border-radius: 999px;
 }
 
@@ -283,7 +290,7 @@ main {
   align-items: center;
   gap: 0.4rem;
   color: #0f1217;
-  background: rgba(202, 160, 96, 0.85);
+  background: #e3c189;
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
   font-weight: 600;
@@ -573,11 +580,13 @@ main {
 }
 
 .badge-level {
-  background: rgba(202, 160, 96, 0.2);
+  background: #e3c189;
+  color: #0f1217;
 }
 
 .badge-category {
-  background: rgba(177, 90, 69, 0.2);
+  background: #f0d9b1;
+  color: #0f1217;
 }
 
 .member-highlight {
@@ -600,12 +609,22 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(202, 160, 96, 0.85);
+  background: #e3c189;
   color: #0f1217;
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+.badge-verified {
+  background: #0f1217;
+  color: var(--color-ink);
+  border: 1px solid rgba(202, 160, 96, 0.6);
+}
+
+.badge-verified .badge-icon {
+  background: #caa060;
 }
 
 .badge-icon {
@@ -706,17 +725,20 @@ main {
   color: #e7e0d6;
   margin-top: 3rem;
   position: relative;
+  overflow: visible;
+  border-top: 1px solid rgba(202, 160, 96, 0.2);
 }
 
 .site-footer::before {
   content: "";
   position: absolute;
-  top: -32px;
+  top: -48px;
   left: 0;
   right: 0;
-  height: 32px;
-  background: #0b0e13;
-  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+  height: 48px;
+  background: linear-gradient(180deg, rgba(202, 160, 96, 0.35) 0%, rgba(11, 14, 19, 0.95) 85%);
+  clip-path: polygon(0 100%, 0 40%, 20% 10%, 40% 40%, 60% 10%, 80% 40%, 100% 15%, 100% 100%);
+  z-index: 0;
 }
 
 .footer-inner {
@@ -725,6 +747,8 @@ main {
   padding: 2.2rem 1.2rem 2.5rem;
   display: grid;
   gap: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-block h3 {
@@ -784,6 +808,8 @@ main {
     transform: none !important;
   }
 }
+
+
 
 
 

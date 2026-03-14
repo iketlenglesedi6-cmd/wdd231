@@ -20,14 +20,17 @@
   <header class="site-header">
     <div class="top-bar">
       <a class="brand" href="index.html">
-        <img class="brand-mark" src="images/chamber-mark.svg" alt="Braamfontein Chamber mark">
+        <img class="brand-mark" src="images/chamber-mark.svg" alt="Braamfontein Chamber mark" width="48" height="48">
         <div class="brand-text">
           <span class="brand-braam">BRAAM</span>
           <span class="brand-name">Braamfontein Chamber</span>
           <span class="brand-tagline">Johannesburg Creative District</span>
         </div>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-icon" aria-hidden="true"><span></span></span>
+        <span class="menu-text sr-only">Menu</span>
+      </button>
     </div>
     <nav class="primary-nav" id="primary-nav" aria-label="Primary">
       <a href="index.html" aria-current="page">Home</a>
@@ -39,16 +42,24 @@
 
   <main>
     <section class="hero">
-      <div>
+      <div class="hero-content">
+        <p class="hero-tag">BRAAMFONTEIN CREATIVE DISTRICT</p>
         <h1>Braamfontein Chamber of Commerce</h1>
         <p>
-          The chamber landing page will be built next week. For now, explore our member directory to
-          connect with trusted local businesses.
+          The landing experience is in progress. For now, explore the member directory to connect
+          with trusted local businesses and creative partners.
         </p>
+        <a class="spotlight-link" href="directory.html">Explore the directory</a>
       </div>
-      <div>
-        <p class="badge">Landing page content arrives in Week 3</p>
-      </div>
+      <aside class="hero-spotlight">
+        <p class="badge badge-verified"><span class="badge-icon" aria-hidden="true"></span>Verified by Braamfontein Chamber</p>
+        <div class="spotlight-card">
+          <p class="spotlight-label">Business of the Month</p>
+          <h2>The Bannister Hotel</h2>
+          <p class="spotlight-copy">Boutique stays and gallery-night partnerships on De Beer Street.</p>
+          <a class="spotlight-link" href="https://bannisterhotel.co.za/" target="_blank" rel="noopener noreferrer">Visit business</a>
+        </div>
+      </aside>
     </section>
   </main>
 
@@ -64,8 +75,14 @@
       <div class="footer-block">
         <h3>Stay Connected</h3>
         <p>Follow our updates, workshops, and member news.</p>
-        <p><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-        <p><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook icon" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn icon" width="20" height="20">
+          </a>
+        </div>
       </div>
       <div class="footer-block footer-meta">
         <p><span>&copy;</span> <span id="currentyear"></span> Lesedi Pride Iketleng</p>
@@ -76,5 +93,3 @@
   </footer>
 </body>
 </html>
-
-
