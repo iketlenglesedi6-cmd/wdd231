@@ -1,0 +1,71 @@
+﻿@media (min-width: 720px) {
+  .primary-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 1.2rem 1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .directory-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .directory-map .map-card {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+  }
+
+  .member-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .member-list.list .member-card {
+    grid-template-columns: 1fr 220px;
+  }
+
+  .member-list.list .member-card img {
+    display: none;
+  }
+
+  .member-list.list .member-card .member-description {
+    grid-column: 1;
+  }
+
+  .member-list.list .member-card .member-meta {
+    grid-column: 2;
+    justify-self: end;
+    text-align: right;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .member-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 2.1fr 1fr;
+    gap: 2.8rem;
+    align-items: center;
+  }
+
+  .gallery-night {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+  }
+}
+

@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#e2583e"/>
+  <rect x="28" y="30" width="64" height="44" rx="10" fill="#141922" opacity="0.9"/>
+  <circle cx="42" cy="50" r="8" fill="#e2583e"/>
+  <circle cx="60" cy="50" r="8" fill="#e2583e"/>
+  <circle cx="78" cy="50" r="8" fill="#e2583e"/>
+  <text x="60" y="106" text-anchor="middle" font-size="14" font-family="Work Sans, Arial" fill="#141922">Soweto</text>
+</svg>
+

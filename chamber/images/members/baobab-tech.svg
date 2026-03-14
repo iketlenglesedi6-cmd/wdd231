@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#0f6b5f"/>
+  <circle cx="60" cy="44" r="18" fill="#f2b849"/>
+  <path d="M24 88c10-14 24-22 36-22s26 8 36 22" stroke="#141922" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <text x="60" y="108" text-anchor="middle" font-size="16" font-family="Work Sans, Arial" fill="#141922">Baobab</text>
+</svg>
+

@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#6b4f9e"/>
+  <circle cx="60" cy="42" r="20" fill="#141922" opacity="0.9"/>
+  <path d="M30 84c8-10 18-15 30-15s22 5 30 15" stroke="#f2b849" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="60" y="106" text-anchor="middle" font-size="14" font-family="Work Sans, Arial" fill="#141922">Ubuntu</text>
+</svg>
+

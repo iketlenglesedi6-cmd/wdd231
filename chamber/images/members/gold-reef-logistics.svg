@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#1f2a44"/>
+  <path d="M20 70h80" stroke="#f2b849" stroke-width="10" stroke-linecap="round"/>
+  <rect x="28" y="32" width="64" height="30" rx="8" fill="#141922" opacity="0.85"/>
+  <text x="60" y="104" text-anchor="middle" font-size="15" font-family="Work Sans, Arial" fill="#f2b849">Gold Reef</text>
+</svg>
+

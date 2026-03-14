@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Galata Bakery">
+  <rect width="120" height="120" rx="22" fill="#141922"/>
+  <rect x="8" y="8" width="104" height="104" rx="18" fill="none" stroke="#caa060" stroke-width="2"/>
+  <path d="M34 78h52" stroke="#caa060" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="46" cy="48" r="8" fill="#b15a45"/>
+  <circle cx="74" cy="48" r="8" fill="#b15a45"/>
+  <text x="60" y="66" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="18" fill="#f2eadf">GB</text>
+</svg>
+

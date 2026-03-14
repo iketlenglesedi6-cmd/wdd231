@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="The Bannister Hotel">
+  <rect width="120" height="120" rx="22" fill="#141922"/>
+  <rect x="8" y="8" width="104" height="104" rx="18" fill="none" stroke="#caa060" stroke-width="2"/>
+  <path d="M24 72c10-14 22-20 36-20 10 0 20 3 36 10" stroke="#caa060" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <text x="60" y="58" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f2eadf">BH</text>
+</svg>
+

@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#7a3d2b"/>
+  <circle cx="60" cy="44" r="18" fill="#f2b849"/>
+  <path d="M30 84c12-14 24-20 30-20s18 6 30 20" stroke="#141922" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="60" y="108" text-anchor="middle" font-size="12" font-family="Work Sans, Arial" fill="#141922">Copperleaf</text>
+</svg>
+

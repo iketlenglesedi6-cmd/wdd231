@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Great Dane">
+  <rect width="120" height="120" rx="22" fill="#141922"/>
+  <rect x="8" y="8" width="104" height="104" rx="18" fill="none" stroke="#caa060" stroke-width="2"/>
+  <path d="M32 78c10-12 18-18 28-18s18 6 28 18" stroke="#b15a45" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <text x="60" y="62" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f2eadf">GD</text>
+</svg>
+

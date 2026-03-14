@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="24" fill="#1f3b33"/>
+  <rect x="34" y="24" width="52" height="72" rx="12" fill="#141922" opacity="0.9"/>
+  <path d="M44 40h32M44 56h32M44 72h32" stroke="#1f3b33" stroke-width="6" stroke-linecap="round"/>
+  <text x="60" y="110" text-anchor="middle" font-size="12" font-family="Work Sans, Arial" fill="#f2b849">Emerald</text>
+</svg>
+

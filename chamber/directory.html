@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Braamfontein Chamber of Commerce member directory and connect with trusted local businesses.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>Member Directory | Braamfontein Chamber of Commerce</title>
+
+  <meta property="og:title" content="Braamfontein Chamber Member Directory">
+  <meta property="og:description" content="Browse the official directory of Braamfontein Chamber members and discover local partners.">
+  <meta property="og:image" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/images/social-share.svg">
+  <meta property="og:url" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/chamber.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/chamber-mark.svg" alt="Braamfontein Chamber mark" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-braam">BRAAM</span>
+          <span class="brand-name">Braamfontein Chamber</span>
+          <span class="brand-tagline">Johannesburg Creative District</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">        <span class="menu-icon" aria-hidden="true"><span></span></span>        <span class="menu-text sr-only">Menu</span>      </button>
+    </div>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html" aria-current="page">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">BRAAMFONTEIN CREATIVE DISTRICT</p>
+        <h1>Braamfontein Member Directory</h1>
+        <p>
+          Meet the businesses, creatives, and cultural anchors shaping Braamfontein.
+          Use the view controls to explore the directory in a grid or list layout.
+        </p>
+      </div>
+      <aside class="hero-spotlight">
+        <p class="badge"><span class="badge-icon" aria-hidden="true"></span>Verified by Braamfontein Chamber</p>
+        <div class="spotlight-card">
+          <p class="spotlight-label">Business of the Month</p>
+          <h2>The Bannister Hotel</h2>
+          <p class="spotlight-copy">Boutique stays and gallery-night partnerships on De Beer Street.</p>
+          <a class="spotlight-link" href="https://bannisterhotel.co.za/" target="_blank" rel="noopener noreferrer">Visit business</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="gallery-night">
+      <div class="gallery-head">
+        <h2>Gallery Night Highlights</h2>
+        <p>Snapshots from Braam's creative district - studios, stages, and late-night markets.</p>
+      </div>
+      <div class="slideshow" aria-live="polite">
+        <img id="gallery-slide" src="images/gallery/braam-rooftop-lights.jpg" alt="Night city view with illuminated hotel signage and towers" width="1280" height="720">
+        <p id="gallery-caption" class="slide-caption">Braam rooftop lights after dark</p>
+      </div>
+    </section>
+
+    <section class="directory-map" aria-label="Braamfontein map preview">
+      <div class="map-card">
+        <div class="map-text">
+          <h2>Creative District Map</h2>
+          <p>Locate our members along Juta Street, De Beer Street, and the Braamfontein core.</p>
+        </div>
+        <div class="map-stage" id="map-stage">
+          <img src="images/braam-map.svg" alt="Illustrated map preview of Braamfontein member district" width="720" height="420">
+          <div id="map-pins" class="map-pins" aria-live="polite"></div>
+        </div>
+        <p class="map-note">Pins shown for members with confirmed coordinates.</p>
+      </div>
+    </section>
+
+    <section class="directory-controls" aria-label="Directory controls">
+      <div>
+        <h2>Browse Members</h2>
+        <p class="member-description">Filter by your preferred layout and connect with new partners.</p>
+      </div>
+      <div class="toggle-group" role="group" aria-label="View options">
+        <button id="grid-view" type="button" class="is-active" aria-pressed="true">Grid View</button>
+        <button id="list-view" type="button" aria-pressed="false">List View</button>
+      </div>
+      <div class="filter-group">
+        <p class="filter-label">Filter by category</p>
+        <div id="category-filters" class="filters" role="group" aria-label="Category filters"></div>
+      </div>
+    </section>
+
+    <section id="member-list" class="member-list" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-block">
+        <h3>Contact</h3>
+        <p>Braamfontein Chamber of Commerce</p>
+        <p>125 Juta Street, Braamfontein, Johannesburg</p>
+        <p>Phone: +27 11 555 0100</p>
+        <p>Email: info@joburgchamber.example.com</p>
+      </div>
+      <div class="footer-block">
+        <h3>Stay Connected</h3>
+        <p>Follow our updates, workshops, and member news.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn" width="20" height="20">
+          </a>
+        </div>
+      </div>
+      <div class="footer-block footer-meta">
+        <p><span>&copy;</span> <span id="currentyear"></span> Lesedi Pride Iketleng</p>
+        <p>WDD 231 Chamber Project</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+

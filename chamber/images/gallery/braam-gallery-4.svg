@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#141922"/>
+  <rect x="120" y="150" width="960" height="420" rx="40" fill="#0f1217" stroke="#caa060" stroke-width="3"/>
+  <path d="M180 470c140-140 280-210 420-210 120 0 230 30 360 110" stroke="#b15a45" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="380" cy="280" r="60" fill="#caa060" opacity="0.8"/>
+  <text x="180" y="220" font-family="Manrope, Arial, sans-serif" font-size="26" fill="#f2eadf">Braam Creative District</text>
+</svg>
