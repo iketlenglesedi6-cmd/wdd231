@@ -188,6 +188,12 @@ main {
   border-color: rgba(202, 160, 96, 0.35);
 }
 
+.primary-nav a[aria-current="page"] {
+  background: rgba(202, 160, 96, 0.3);
+  border-color: rgba(202, 160, 96, 0.6);
+  color: #f7f0e6;
+}
+
 .primary-nav.is-open {
   display: flex;
 }
