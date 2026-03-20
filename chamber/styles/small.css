@@ -189,9 +189,9 @@ main {
 }
 
 .primary-nav a[aria-current="page"] {
-  background: rgba(202, 160, 96, 0.3);
+  background: #e3c189;
   border-color: rgba(202, 160, 96, 0.6);
-  color: #f7f0e6;
+  color: #0f1217;
 }
 
 .primary-nav.is-open {
@@ -355,12 +355,15 @@ main {
   text-transform: uppercase;
 }
 
-@keyframes heroDrift {\n  0% { transform: scale(1.04) translateY(0); }\n  50% { transform: scale(1.07) translateY(-6px); }\n  100% { transform: scale(1.04) translateY(0); }\n}
+@keyframes heroDrift {
+  0% {
+    transform: scale(1.04) translateY(0);
+  }
   50% {
-    transform: scale(1.1) translateY(-12px);
+    transform: scale(1.07) translateY(-6px);
   }
   100% {
-    transform: scale(1.05) translateY(0);
+    transform: scale(1.04) translateY(0);
   }
 }
 
@@ -404,10 +407,13 @@ main {
   color: var(--color-muted);
 }
 
-\.home-grid {\n  position: relative;
+.home-grid {
+  position: relative;
   display: grid;
   gap: 1.5rem;
-  margin-top: 1.5rem;\n  padding-top: 1.2rem;\n  border-top: 1px solid rgba(202, 160, 96, 0.18);
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(202, 160, 96, 0.18);
 }
 
 .card-header {
@@ -591,7 +597,9 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.event-tile strong {
+.event-title {
+  margin: 0;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -602,8 +610,8 @@ main {
   width: 40px;
   height: 32px;
   border-radius: 8px;
-  background: rgba(202, 160, 96, 0.25);
-  color: var(--color-ink);
+  background: #e3c189;
+  color: #0f1217;
   font-weight: 700;
 }
 
@@ -708,8 +716,8 @@ main {
   gap: 0.4rem;
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
-  background: rgba(202, 160, 96, 0.2);
-  color: var(--color-ink);
+  background: #e3c189;
+  color: #0f1217;
   font-weight: 600;
   width: fit-content;
 }
