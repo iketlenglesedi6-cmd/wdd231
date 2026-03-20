@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Braamfontein Chamber of Commerce home page.">
+  <meta name="description" content="Welcome to the Braamfontein Chamber of Commerce. Explore events, weather, and featured members in the creative district.">
   <meta name="author" content="Lesedi Pride Iketleng">
-  <title>Braamfontein Chamber of Commerce</title>
+  <title>Braamfontein Chamber of Commerce | Home</title>
+
+  <meta property="og:title" content="Braamfontein Chamber Home">
+  <meta property="og:description" content="Discover events, member spotlights, and the creative pulse of Braamfontein.">
+  <meta property="og:image" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/images/social-share.svg">
+  <meta property="og:url" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/index.html">
+  <meta property="og:type" content="website">
 
   <link rel="icon" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +21,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/chamber.js" defer></script>
+  <script src="scripts/home.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -41,25 +48,105 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
+    <section class="hero hero-alt">
+      <div class="hero-alt-content">
         <p class="hero-tag">BRAAMFONTEIN CREATIVE DISTRICT</p>
         <h1>Braamfontein Chamber of Commerce</h1>
         <p>
-          The landing experience is in progress. For now, explore the member directory to connect
-          with trusted local businesses and creative partners.
+          A chamber for Braam's creative economy—supporting galleries, cafes, studios, and makers.
+          Join the network and connect with partners shaping the district.
         </p>
-        <a class="spotlight-link" href="directory.html">Explore the directory</a>
-      </div>
-      <aside class="hero-spotlight">
-        <p class="badge badge-verified"><span class="badge-icon" aria-hidden="true"></span>Verified by Braamfontein Chamber</p>
-        <div class="spotlight-card">
-          <p class="spotlight-label">Business of the Month</p>
-          <h2>The Bannister Hotel</h2>
-          <p class="spotlight-copy">Boutique stays and gallery-night partnerships on De Beer Street.</p>
-          <a class="spotlight-link" href="https://bannisterhotel.co.za/" target="_blank" rel="noopener noreferrer">Visit business</a>
+        <div class="hero-actions">
+          <a class="spotlight-link" href="join.html">Join the Chamber</a>
+          <a class="ghost-link" href="directory.html">Browse the Directory</a>
         </div>
-      </aside>
+        <div class="hero-stats">
+          <div>
+            <span class="meta-label">Members</span>
+            <span class="meta-value">15+ Local Businesses</span>
+          </div>
+          <div>
+            <span class="meta-label">Events</span>
+            <span class="meta-value">Weekly Creative Nights</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-alt-media">
+        <img src="images/gallery/braam-rooftop-lights.jpg" alt="Braamfontein skyline at night" width="1280" height="720" loading="lazy">
+        <div class="hero-sticker">BRAAM AFTER DARK</div>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Quick links">
+      <a class="quick-link" href="directory.html">
+        <span class="quick-title">Member Directory</span>
+        <span class="quick-text">Find trusted local partners</span>
+      </a>
+      <a class="quick-link" href="join.html">
+        <span class="quick-title">Join the Chamber</span>
+        <span class="quick-text">Grow your network in Braam</span>
+      </a>
+      <a class="quick-link" href="discover.html">
+        <span class="quick-title">Discover Braam</span>
+        <span class="quick-text">See the district highlights</span>
+      </a>
+    </section>
+
+    <section class="home-grid">
+      <div class="info-card events">
+        <div class="card-header">
+          <h2>Current Events</h2>
+          <a class="ghost-link" href="discover.html">See all</a>
+        </div>
+        <div class="event-tiles">
+          <article class="event-tile">
+            <span class="event-date">Fri</span>
+            <strong>Gallery Night</strong>
+            <p>18:00 on Juta Street.</p>
+          </article>
+          <article class="event-tile">
+            <span class="event-date">Sat</span>
+            <strong>Market Pop-Up</strong>
+            <p>10:00 in the creative yard.</p>
+          </article>
+          <article class="event-tile">
+            <span class="event-date">Wed</span>
+            <strong>Creative Talks</strong>
+            <p>17:30 at the theatre lounge.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="info-card weather" aria-live="polite">
+        <div class="card-header">
+          <h2>Braam Weather</h2>
+          <span class="meta-label">Today</span>
+        </div>
+        <div class="weather-current">
+          <div class="weather-icon-wrap">
+            <img id="weather-icon" src="" alt="" width="64" height="64" loading="lazy">
+          </div>
+          <div>
+            <p class="weather-temp"><span id="current-temp">--</span>°C</p>
+            <p id="weather-desc" class="weather-desc">Loading weather...</p>
+          </div>
+        </div>
+        <div class="weather-details">
+          <div><span>Feels Like</span><strong id="weather-feels">--°C</strong></div>
+          <div><span>Humidity</span><strong id="weather-humidity">--%</strong></div>
+          <div><span>Wind</span><strong id="weather-wind">-- m/s</strong></div>
+        </div>
+        <div class="weather-forecast">
+          <h3>3-Day Forecast</h3>
+          <ul id="forecast-list" class="forecast-tiles"></ul>
+        </div>
+      </div>
+
+      <div class="info-card spotlights" id="spotlights">
+        <h2>Member Spotlights</h2>
+        <p class="spotlight-intro">Gold and Silver members to discover this week.</p>
+        <div id="spotlight-list" class="spotlight-grid"></div>
+      </div>
     </section>
   </main>
 
@@ -70,7 +157,7 @@
         <p>Braamfontein Chamber of Commerce</p>
         <p>125 Juta Street, Braamfontein, Johannesburg</p>
         <p>Phone: +27 11 555 0100</p>
-        <p>Email: info@joburgchamber.example.com</p>
+        <p>Email: info@joburgchamber.businesses.com</p>
       </div>
       <div class="footer-block">
         <h3>Stay Connected</h3>
@@ -93,3 +180,4 @@
   </footer>
 </body>
 </html>
+
