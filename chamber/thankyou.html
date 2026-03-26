@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for applying to the Braamfontein Chamber of Commerce.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>Thank You | Braamfontein Chamber of Commerce</title>
+
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/chamber.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/chamber-mark.svg" alt="Braamfontein Chamber mark" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-braam">BRAAM</span>
+          <span class="brand-name">Braamfontein Chamber</span>
+          <span class="brand-tagline">Johannesburg Creative District</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-icon" aria-hidden="true"><span></span></span>
+        <span class="menu-text sr-only">Menu</span>
+      </button>
+    </div>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-join">
+      <div class="hero-content">
+        <p class="hero-tag">APPLICATION RECEIVED</p>
+        <h1>Thank You for Applying</h1>
+        <p>We will review your application and contact you soon.</p>
+      </div>
+    </section>
+
+    <section class="thankyou-card">
+      <h2>Your Submission</h2>
+      <dl>
+        <div>
+          <dt>First Name</dt>
+          <dd id="ty-first">--</dd>
+        </div>
+        <div>
+          <dt>Last Name</dt>
+          <dd id="ty-last">--</dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd id="ty-email">--</dd>
+        </div>
+        <div>
+          <dt>Mobile Phone</dt>
+          <dd id="ty-phone">--</dd>
+        </div>
+        <div>
+          <dt>Business Name</dt>
+          <dd id="ty-organization">--</dd>
+        </div>
+        <div>
+          <dt>Submitted</dt>
+          <dd id="ty-timestamp">--</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-block">
+        <h3>Contact</h3>
+        <p>Braamfontein Chamber of Commerce</p>
+        <p>125 Juta Street, Braamfontein, Johannesburg</p>
+        <p>Phone: +27 11 555 0100</p>
+        <p>Email: info@joburgchamber.example.com</p>
+      </div>
+      <div class="footer-block">
+        <h3>Stay Connected</h3>
+        <p>Follow our updates, workshops, and member news.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook icon" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn icon" width="20" height="20">
+          </a>
+        </div>
+      </div>
+      <div class="footer-block footer-meta">
+        <p><span>&copy;</span> <span id="currentyear"></span> Lesedi Pride Iketleng</p>
+        <p>WDD 231 Chamber Project</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

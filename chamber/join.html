@@ -1,0 +1,236 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply to join the Braamfontein Chamber of Commerce. Choose a membership level and submit your application.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>Join the Chamber | Braamfontein Chamber of Commerce</title>
+
+  <meta property="og:title" content="Join the Braamfontein Chamber">
+  <meta property="og:description" content="Apply for membership and unlock benefits across Braamfontein's creative district.">
+  <meta property="og:image" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/images/social-share.svg">
+  <meta property="og:url" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/chamber.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/chamber-mark.svg" alt="Braamfontein Chamber mark" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-braam">BRAAM</span>
+          <span class="brand-name">Braamfontein Chamber</span>
+          <span class="brand-tagline">Johannesburg Creative District</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-icon" aria-hidden="true"><span></span></span>
+        <span class="menu-text sr-only">Menu</span>
+      </button>
+    </div>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html" aria-current="page">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-join">
+      <div class="hero-content">
+        <p class="hero-tag">BRAAMFONTEIN CREATIVE DISTRICT</p>
+        <h1>Join the Braamfontein Chamber</h1>
+        <p>
+          Apply to become part of Braam's creative business network. Choose a membership level
+          and unlock programs, training, and promotional opportunities.
+        </p>
+      </div>
+    </section>
+
+    <section class="join-layout">
+      <form class="join-form" method="get" action="thankyou.html">
+        <h2>Membership Application</h2>
+
+        <label>
+          First Name
+          <input type="text" name="first" title="First Name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name
+          <input type="text" name="last" title="Last Name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Organizational Title
+          <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title"
+            pattern="^[A-Za-z\\-\\s']{2,}$" placeholder="Owner, Founder, Manager" required>
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" title="Email" autocomplete="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          Mobile Phone
+          <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Business / Organization Name
+          <input type="text" name="organization" title="Organization" autocomplete="organization" required>
+        </label>
+
+        <fieldset class="membership-fieldset">
+          <legend>Membership Level</legend>
+          <label><input type="radio" name="membership" value="np" required> NP Membership (Non-profit)</label>
+          <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+          <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+          <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+        </fieldset>
+
+        <label>
+          Business / Organization Description
+          <textarea name="description" title="Business Description" rows="4"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <button type="submit" class="spotlight-link">Submit Application</button>
+      </form>
+
+            <aside class="membership-cards" aria-label="Membership levels">
+        <div class="join-benefits">
+          <h2>Why Join the Chamber</h2>
+          <ul>
+            <li>Member directory visibility and referrals</li>
+            <li>Discounts on events, training, and activations</li>
+            <li>Priority placement in spotlight rotations</li>
+            <li>Invitations to Braam business roundtables</li>
+          </ul>
+        </div>
+
+        <article class="membership-card">
+          <span class="membership-tag">NP</span>
+          <h3>NP Membership</h3>
+          <p>No-fee membership for non-profits.</p>
+          <button type="button" class="ghost-link" data-modal="modal-np">Read more</button>
+        </article>
+        <article class="membership-card">
+          <span class="membership-tag">Bronze</span>
+          <h3>Bronze Membership</h3>
+          <p>Starter access to chamber programs.</p>
+          <button type="button" class="ghost-link" data-modal="modal-bronze">Read more</button>
+        </article>
+        <article class="membership-card">
+          <span class="membership-tag">Silver</span>
+          <h3>Silver Membership</h3>
+          <p>Elevated exposure and discounts.</p>
+          <button type="button" class="ghost-link" data-modal="modal-silver">Read more</button>
+        </article>
+        <article class="membership-card">
+          <span class="membership-tag">Gold</span>
+          <h3>Gold Membership</h3>
+          <p>Premium spotlight and leadership access.</p>
+          <button type="button" class="ghost-link" data-modal="modal-gold">Read more</button>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <dialog class="modal" id="modal-np">
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <h3>NP Membership Benefits</h3>
+      <ul>
+        <li>Community announcements in the chamber bulletin</li>
+        <li>Access to member roundtables and nonprofit collaborations</li>
+        <li>Volunteer matching support for creative programs</li>
+        <li>Event calendar listings for public initiatives</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-bronze">
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <h3>Bronze Membership Benefits</h3>
+      <ul>
+        <li>Member directory listing with contact details</li>
+        <li>Invitations to monthly networking meetups</li>
+        <li>Workshop and training discounts</li>
+        <li>Business listing featured in new-member rollups</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-silver">
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <h3>Silver Membership Benefits</h3>
+      <ul>
+        <li>Priority invitations to district events</li>
+        <li>Featured placement in the chamber newsletter</li>
+        <li>Discounted studio or market activations</li>
+        <li>Training vouchers for staff development</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-gold">
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>Homepage spotlight rotation and campaign shout-outs</li>
+        <li>Event sponsorship credits and co-branding</li>
+        <li>Leadership council access and strategy sessions</li>
+        <li>Priority placement for chamber promotions</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-block">
+        <h3>Contact</h3>
+        <p>Braamfontein Chamber of Commerce</p>
+        <p>125 Juta Street, Braamfontein, Johannesburg</p>
+        <p>Phone: +27 11 555 0100</p>
+        <p>Email: info@joburgchamber.example.com</p>
+      </div>
+      <div class="footer-block">
+        <h3>Stay Connected</h3>
+        <p>Follow our updates, workshops, and member news.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook icon" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn icon" width="20" height="20">
+          </a>
+        </div>
+      </div>
+      <div class="footer-block footer-meta">
+        <p><span>&copy;</span> <span id="currentyear"></span> Lesedi Pride Iketleng</p>
+        <p>WDD 231 Chamber Project</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
