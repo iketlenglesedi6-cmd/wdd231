@@ -760,9 +760,6 @@ main {
 .join-layout {
   display: grid;
   gap: 2rem;
-}
-
-.join-layout {
   position: relative;
 }
 
@@ -990,13 +987,8 @@ main {
   position: relative;
 }
 
-.modal-content h3,
-.modal-content ul {
+.modal-content h3 {
   padding: 1.2rem 1.4rem 0;
-}
-
-.modal-content ul {
-  padding-bottom: 1.4rem;
 }
 
 .modal-close {
@@ -1024,7 +1016,7 @@ main {
 
 .modal-content ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding: 0 1.4rem 1.4rem 2.6rem;
   display: grid;
   gap: 0.4rem;
 }
