@@ -1,49 +1,53 @@
-﻿@media (min-width: 720px) {
-  .site-header,
+@media (min-width: 760px) {
   main,
-  footer {
-    width: min(1120px, calc(100% - 2.5rem));
+  .site-footer {
+    width: min(1120px, calc(100% - 3rem));
   }
 
-  .brand-row {
-    border-radius: 0.9rem 0.9rem 0 0;
-    padding: 0.78rem 1rem;
+  main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
   }
 
-  #menu-button {
-    display: none;
+  .card:nth-child(4),
+  .card:nth-child(6),
+  .card:nth-child(7),
+  .card:nth-child(8),
+  .card:nth-child(9) {
+    grid-column: 1 / -1;
   }
 
-  .nav {
-    display: flex;
-    flex-direction: row;
-    border-top: 0;
+  .palette-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
-  .nav a {
-    flex: 0 0 auto;
-    min-width: 9.5rem;
-    text-align: center;
-    border-top: 0;
-    border-right: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 0.95rem 1.05rem;
+  .type-grid,
+  .journey {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .intro-grid {
+  .wireframe-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .desktop-main {
+    grid-template-columns: 1.55fr 0.85fr;
+    align-items: stretch;
+  }
+
+  .desktop-lower {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 0.75rem;
+  }
+
+  .desktop-buttons {
+    align-content: center;
+  }
+
+  .desktop-header,
+  .desktop-hero {
+    min-height: 6rem;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
-  }
-
-  .filters {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.7rem;
-  }
-
-  .course-list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.7rem;
+    place-items: center;
   }
 }
-
-

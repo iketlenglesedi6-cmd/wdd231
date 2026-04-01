@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 300" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Come As You Are — Tree of Life Logo</title>
+  <desc id="logoDesc">A sacred tree of life logo with an ornamental ring, olive-toned leaves, warm fruit, deep roots, and elegant serif wordmark.</desc>
+
+  <!-- Outer rings -->
+  <circle cx="140" cy="128" r="108" fill="none" stroke="#9b7d61" stroke-width="0.6" opacity="0.2"/>
+  <circle cx="140" cy="128" r="101" fill="none" stroke="#daa38f" stroke-width="1.2" opacity="0.25"/>
+  <circle cx="140" cy="128" r="94" fill="none" stroke="#9b7d61" stroke-width="0.4" opacity="0.18"/>
+
+  <!-- Cardinal diamond marks -->
+  <polygon points="140,19 143,25 140,31 137,25" fill="#daa38f" opacity="0.6"/>
+  <polygon points="140,225 143,231 140,237 137,231" fill="#daa38f" opacity="0.6"/>
+  <polygon points="29,128 35,131 29,134 23,131" fill="#daa38f" opacity="0.6"/>
+  <polygon points="251,128 257,131 251,134 245,131" fill="#daa38f" opacity="0.6"/>
+
+  <!-- 16-mark radial ticks -->
+  <g opacity="0.2" stroke="#9b7d61">
+    <g transform="rotate(0,140,128)">   <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(22.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+    <g transform="rotate(45,140,128)">  <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(67.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+    <g transform="rotate(90,140,128)">  <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(112.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+    <g transform="rotate(135,140,128)"> <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(157.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+    <g transform="rotate(180,140,128)"> <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(202.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+    <g transform="rotate(225,140,128)"> <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(247.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+    <g transform="rotate(270,140,128)"> <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(292.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+    <g transform="rotate(315,140,128)"> <line x1="140" y1="20" x2="140" y2="31" stroke-width="1.1"/></g>
+    <g transform="rotate(337.5,140,128)"><line x1="140" y1="20" x2="140" y2="27" stroke-width="0.6"/></g>
+  </g>
+
+  <!-- Inner warmth halo -->
+  <circle cx="140" cy="116" r="62" fill="#feda86" opacity="0.07"/>
+
+  <!-- ROOT SYSTEM -->
+  <path d="M140,183 C140,190 136,196 128,200 C120,204 112,203 106,208" fill="none" stroke="#9b7d61" stroke-width="1.2" opacity="0.4"/>
+  <path d="M140,183 C140,190 144,196 152,200 C160,204 168,203 174,208" fill="none" stroke="#9b7d61" stroke-width="1.2" opacity="0.4"/>
+  <path d="M140,186 C138,194 132,201 124,205" fill="none" stroke="#9b7d61" stroke-width="0.8" opacity="0.28"/>
+  <path d="M140,186 C142,194 148,201 156,205" fill="none" stroke="#9b7d61" stroke-width="0.8" opacity="0.28"/>
+  <path d="M135,193 C130,198 122,202 116,206" fill="none" stroke="#9b7d61" stroke-width="0.6" opacity="0.2"/>
+  <path d="M145,193 C150,198 158,202 164,206" fill="none" stroke="#9b7d61" stroke-width="0.6" opacity="0.2"/>
+
+  <!-- TRUNK -->
+  <rect x="136" y="116" width="8" height="72" rx="4" fill="#9b7d61" opacity="0.55"/>
+  <line x1="139" y1="120" x2="139" y2="183" stroke="#554233" stroke-width="0.4" opacity="0.25"/>
+  <line x1="141" y1="120" x2="141" y2="183" stroke="#554233" stroke-width="0.4" opacity="0.15"/>
+
+  <!-- MAIN BRANCHES -->
+  <path d="M140,143 C130,136 116,128 104,126" fill="none" stroke="#9b7d61" stroke-width="2.5" opacity="0.6"/>
+  <path d="M140,143 C150,136 164,128 176,126" fill="none" stroke="#9b7d61" stroke-width="2.5" opacity="0.6"/>
+  <path d="M140,130 C132,122 120,114 110,110" fill="none" stroke="#9b7d61" stroke-width="2" opacity="0.55"/>
+  <path d="M140,130 C148,122 160,114 170,110" fill="none" stroke="#9b7d61" stroke-width="2" opacity="0.55"/>
+  <path d="M140,120 C136,110 132,98 130,88" fill="none" stroke="#9b7d61" stroke-width="1.6" opacity="0.5"/>
+  <path d="M140,120 C144,110 148,98 150,88" fill="none" stroke="#9b7d61" stroke-width="1.6" opacity="0.5"/>
+
+  <!-- SECONDARY BRANCHES -->
+  <path d="M110,110 C104,106 96,104 88,106" fill="none" stroke="#9b7d61" stroke-width="1.2" opacity="0.4"/>
+  <path d="M110,110 C106,102 104,94 106,86" fill="none" stroke="#9b7d61" stroke-width="1" opacity="0.35"/>
+  <path d="M170,110 C176,106 184,104 192,106" fill="none" stroke="#9b7d61" stroke-width="1.2" opacity="0.4"/>
+  <path d="M170,110 C174,102 176,94 174,86" fill="none" stroke="#9b7d61" stroke-width="1" opacity="0.35"/>
+  <path d="M104,126 C98,124 90,126 84,130" fill="none" stroke="#9b7d61" stroke-width="1" opacity="0.35"/>
+  <path d="M176,126 C182,124 190,126 196,130" fill="none" stroke="#9b7d61" stroke-width="1" opacity="0.35"/>
+
+  <!-- LEAVES — left -->
+  <ellipse cx="96" cy="106" rx="7" ry="4" fill="#92ada4" opacity="0.65" transform="rotate(-25,96,106)"/>
+  <ellipse cx="86" cy="110" rx="7" ry="3.5" fill="#92ada4" opacity="0.55" transform="rotate(-15,86,110)"/>
+  <ellipse cx="82" cy="130" rx="8" ry="4" fill="#92ada4" opacity="0.55" transform="rotate(10,82,130)"/>
+  <ellipse cx="90" cy="126" rx="7" ry="3.5" fill="#9b7d61" opacity="0.3" transform="rotate(-5,90,126)"/>
+  <ellipse cx="100" cy="116" rx="6" ry="3" fill="#92ada4" opacity="0.5" transform="rotate(-35,100,116)"/>
+  <ellipse cx="106" cy="86" rx="6" ry="3" fill="#92ada4" opacity="0.5" transform="rotate(-45,106,86)"/>
+  <ellipse cx="114" cy="82" rx="7" ry="3.5" fill="#92ada4" opacity="0.55" transform="rotate(-30,114,82)"/>
+  <ellipse cx="108" cy="98" rx="6" ry="3" fill="#daa38f" opacity="0.4" transform="rotate(-20,108,98)"/>
+  <ellipse cx="126" cy="82" rx="6" ry="3" fill="#92ada4" opacity="0.55" transform="rotate(-20,126,82)"/>
+  <ellipse cx="128" cy="74" rx="5" ry="3" fill="#92ada4" opacity="0.45" transform="rotate(-10,128,74)"/>
+
+  <!-- LEAVES — right -->
+  <ellipse cx="184" cy="106" rx="7" ry="4" fill="#92ada4" opacity="0.65" transform="rotate(25,184,106)"/>
+  <ellipse cx="194" cy="110" rx="7" ry="3.5" fill="#92ada4" opacity="0.55" transform="rotate(15,194,110)"/>
+  <ellipse cx="198" cy="130" rx="8" ry="4" fill="#92ada4" opacity="0.55" transform="rotate(-10,198,130)"/>
+  <ellipse cx="190" cy="126" rx="7" ry="3.5" fill="#9b7d61" opacity="0.3" transform="rotate(5,190,126)"/>
+  <ellipse cx="180" cy="116" rx="6" ry="3" fill="#92ada4" opacity="0.5" transform="rotate(35,180,116)"/>
+  <ellipse cx="174" cy="86" rx="6" ry="3" fill="#92ada4" opacity="0.5" transform="rotate(45,174,86)"/>
+  <ellipse cx="166" cy="82" rx="7" ry="3.5" fill="#92ada4" opacity="0.55" transform="rotate(30,166,82)"/>
+  <ellipse cx="172" cy="98" rx="6" ry="3" fill="#daa38f" opacity="0.4" transform="rotate(20,172,98)"/>
+  <ellipse cx="154" cy="82" rx="6" ry="3" fill="#92ada4" opacity="0.55" transform="rotate(20,154,82)"/>
+  <ellipse cx="152" cy="74" rx="5" ry="3" fill="#92ada4" opacity="0.45" transform="rotate(10,152,74)"/>
+
+  <!-- LEAVES — top canopy -->
+  <ellipse cx="134" cy="68" rx="7" ry="3.5" fill="#92ada4" opacity="0.6" transform="rotate(-10,134,68)"/>
+  <ellipse cx="140" cy="64" rx="9" ry="4.5" fill="#92ada4" opacity="0.65"/>
+  <ellipse cx="146" cy="68" rx="7" ry="3.5" fill="#92ada4" opacity="0.6" transform="rotate(10,146,68)"/>
+
+  <!-- FRUIT -->
+  <circle cx="88" cy="112" r="3" fill="#daa38f" opacity="0.65"/>
+  <circle cx="98" cy="104" r="2.5" fill="#feda86" opacity="0.6"/>
+  <circle cx="106" cy="88" r="2.5" fill="#daa38f" opacity="0.6"/>
+  <circle cx="128" cy="76" r="3" fill="#feda86" opacity="0.65"/>
+  <circle cx="140" cy="58" r="3.5" fill="#feda86" opacity="0.75"/>
+  <circle cx="152" cy="76" r="3" fill="#feda86" opacity="0.65"/>
+  <circle cx="174" cy="88" r="2.5" fill="#daa38f" opacity="0.6"/>
+  <circle cx="182" cy="104" r="2.5" fill="#feda86" opacity="0.6"/>
+  <circle cx="192" cy="112" r="3" fill="#daa38f" opacity="0.65"/>
+
+  <!-- Crown fruit at top -->
+  <circle cx="140" cy="54" r="5.5" fill="#feda86" opacity="0.9"/>
+  <circle cx="140" cy="54" r="3.2" fill="#9b7d61" opacity="0.5"/>
+  <ellipse cx="145" cy="50" rx="4" ry="2" fill="#92ada4" opacity="0.7" transform="rotate(20,145,50)"/>
+
+  <!-- ORNAMENTAL SWASHES -->
+  <path d="M54,222 C72,216 98,213 118,212" fill="none" stroke="#9b7d61" stroke-width="0.8" opacity="0.38"/>
+  <path d="M54,225 C66,221 78,220 90,219" fill="none" stroke="#daa38f" stroke-width="0.5" opacity="0.3"/>
+  <path d="M226,222 C208,216 182,213 162,212" fill="none" stroke="#9b7d61" stroke-width="0.8" opacity="0.38"/>
+  <path d="M226,225 C214,221 202,220 190,219" fill="none" stroke="#daa38f" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Diamond divider -->
+  <polygon points="140,210 143,215 140,220 137,215" fill="#daa38f" opacity="0.65"/>
+  <line x1="60" y1="215" x2="133" y2="215" stroke="#9b7d61" stroke-width="0.5" opacity="0.3"/>
+  <line x1="147" y1="215" x2="220" y2="215" stroke="#9b7d61" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- WORDMARK -->
+  <text x="140" y="244" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="19" font-weight="400" fill="#554233" letter-spacing="0.07em" opacity="0.95">Come As You Are</text>
+
+  <!-- Rule -->
+  <line x1="58" y1="253" x2="222" y2="253" stroke="#daa38f" stroke-width="0.5" opacity="0.4"/>
+  <circle cx="140" cy="253" r="2.2" fill="#daa38f" opacity="0.65"/>
+  <circle cx="62" cy="253" r="1.3" fill="#9b7d61" opacity="0.35"/>
+  <circle cx="218" cy="253" r="1.3" fill="#9b7d61" opacity="0.35"/>
+
+  <!-- TAGLINE -->
+  <text x="140" y="268" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-style="italic" font-size="11" fill="#9b7d61" opacity="0.78" letter-spacing="0.05em">rooted in grace</text>
+
+  <!-- Bottom ornament -->
+  <polygon points="140,280 142,284 140,288 138,284" fill="#daa38f" opacity="0.4"/>
+  <polygon points="140,288 141.5,291 140,294 138.5,291" fill="#daa38f" opacity="0.25"/>
+
+</svg>

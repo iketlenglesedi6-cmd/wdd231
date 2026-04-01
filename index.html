@@ -1,90 +1,233 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WDD 231 course home page with responsive navigation and course filtering.">
+  <meta
+    name="description"
+    content="Come As You Are site plan by Lesedi Pride Iketleng for WDD 231, outlining a calm faith-based reflection website with a landing page, separate content pages, logo direction, palette, typography, and wireframes."
+  >
   <meta name="author" content="Lesedi Pride Iketleng">
-  <title>WDD 231: Web Frontend Development I</title>
+  <meta
+    name="keywords"
+    content="Come As You Are, site plan, WDD 231, Lesedi Pride Iketleng, faith reflection, scripture encouragement, quiet journal, landing page"
+  >
+  <link rel="icon" href="images/favicon-tree.svg" type="image/svg+xml">
+  <title>Come As You Are | Site Plan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/date.js" defer></script>
-  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand-row">
-      <div class="brand">
-        <img class="brand-logo" src="images/website-logo.svg" alt="Website logo for Lesedi Pride Iketleng">
-        <span class="site-name">BYU-I | Lesedi Pride Iketleng</span>
-      </div>
-      <button id="menu-button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+  <header class="hero">
+    <div class="hero-shell">
+      <h1>Come As You Are</h1>
+      <p class="hero-whisper">You are safe here. You do not have to arrive with perfect words.</p>
+      <p class="hero-verse">"Come to me, all who are weary and burdened, and I will give you rest."</p>
+      <p class="hero-reference">Matthew 11:28</p>
+      <a class="hero-link" href="#site-plan">Begin Your Journey</a>
     </div>
-    <nav id="primary-nav" class="nav" aria-label="Primary">
-      <a href="#" aria-current="page">Home</a>
-      <a href="chamber/index.html">Chamber</a>
-      <a href="final/index.html">Final</a>
-    </nav>
   </header>
 
-  <main>
-    <h1>Home</h1>
+  <main id="site-plan">
+    <section class="card">
+      <h2>Site Name</h2>
+      <p><strong>Come As You Are</strong></p>
+      <p>
+        This name reflects the heart of the project - that anyone can approach God honestly, without pretending to be okay. It speaks to vulnerability, acceptance, and the kind of faith that does not require you to have it all together first.
+      </p>
+    </section>
 
-    <div class="intro-grid">
-      <section id="about" class="panel">
-        <h2>About Me</h2>
-        <p>
-          I am Lesedi Pride Iketleng, a learner and growing frontend developer. I started coding by
-          building structured pages with HTML and styling them with CSS, then added JavaScript to make
-          my projects interactive. One of my earlier projects was a rafting company website, where I
-          practiced page layout, navigation, and responsive design. In WDD131, I also created a poetry
-          website project without a backend. I am now improving that project toward a more public-ready
-          standard by strengthening the interface, structure, and overall user experience across mobile
-          and desktop screens.
-        </p>
-      </section>
+    <section class="card">
+      <h2>Site Purpose</h2>
+      <p>
+        This site opens into a calm, faith-based space for honest reflection and spiritual check-ins. From the home page, visitors move into pages where they can explore what they are feeling, sit with their thoughts, journal prayers, and receive scripture-based encouragement. The goal is not to instruct or fix - it is to stay with the person, gently, wherever they are.
+      </p>
+    </section>
 
-      <section class="panel photo-panel">
-        <h2>Student Photo</h2>
-        <figure class="photo-figure">
-          <img class="photo-placeholder" src="images/lesedi-photo.jpeg" alt="Photo of Lesedi Pride Iketleng">
-          <figcaption>Lesedi Pride Iketleng</figcaption>
-        </figure>
-      </section>
-    </div>
+    <section class="card">
+      <h2>Scenarios</h2>
+      <ul class="stack-list">
+        <li>I feel overwhelmed and do not know how to pray.</li>
+        <li>I feel distant from God and want to reconnect.</li>
+        <li>I just need encouragement or a comforting verse.</li>
+        <li>I want a quiet space to write my thoughts and prayers.</li>
+      </ul>
+    </section>
 
-    <section id="courses" class="panel">
-      <h2>Web and Computer Programming Certificate</h2>
-      <div class="filters">
-        <button type="button" data-filter="all" class="is-active">All</button>
-        <button type="button" data-filter="CSE">CSE</button>
-        <button type="button" data-filter="WDD">WDD</button>
+    <section class="card">
+      <h2>Color Scheme</h2>
+      <p>
+        The site uses the natural earth palette from the reference image. These colors support a
+        quiet, grounding mood and will be used consistently throughout the project.
+      </p>
+      <div class="palette-grid">
+        <article class="swatch milky-coffee">
+          <h3>Milky Coffee</h3>
+          <p>#9B7D61</p>
+          <span>Used for headings, logo details, and warm grounded accents.</span>
+        </article>
+        <article class="swatch roasted-peach">
+          <h3>Roasted Peach</h3>
+          <p>#DAA38F</p>
+          <span>Used for soft emphasis, call-to-action accents, and gentle highlights.</span>
+        </article>
+        <article class="swatch whole-wheat">
+          <h3>Whole Wheat</h3>
+          <p>#E9D7C0</p>
+          <span>Used for cards, section backgrounds, and soft neutral surfaces.</span>
+        </article>
+        <article class="swatch eucalyptus">
+          <h3>Eucalyptus</h3>
+          <p>#92ADA4</p>
+          <span>Used for calm accent blocks, supporting panels, and quiet visual balance.</span>
+        </article>
+        <article class="swatch cream">
+          <h3>Cream</h3>
+          <p>#FEDA86</p>
+          <span>Used for the main background glow and light areas that feel hopeful and welcoming.</span>
+        </article>
       </div>
-      <div id="course-list" class="course-list"></div>
-      <p id="total-credits" class="total-credits"></p>
+    </section>
+
+    <section class="card">
+      <h2>Typography</h2>
+      <div class="type-grid">
+        <article class="type-sample">
+          <h3 class="playfair">Cormorant Garamond</h3>
+          <p>Used for the site title, section headings, and scripture text because it feels gentle, reflective, and closer to the elegant style shown in the wireframe.</p>
+        </article>
+        <article class="type-sample">
+          <h3 class="open-sans">Manrope</h3>
+          <p>Used for body copy, navigation, buttons, and planning details because it stays clean and readable without feeling heavy.</p>
+        </article>
+        <article class="type-sample">
+          <h3 class="dancing">Typography Mood</h3>
+          <p>The overall typography should feel soft, calm, and welcoming. The main design relies on the serif and sans-serif pairing rather than decorative script.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card logo-card">
+      <h2>Logo Direction</h2>
+      <div class="logo-direction">
+        <img
+          class="logo-preview"
+          src="images/come-as-you-are-logo-tree-of-life.svg"
+          alt="Come As You Are logo preview"
+          width="140"
+          height="140"
+        >
+        <div>
+          <p>
+            The selected logo uses a tree-of-life symbol with rooted branches, warm circular details,
+            and natural tones to suggest growth, grace, shelter, and spiritual grounding.
+          </p>
+          <p>
+            It feels more meaningful and established than the earlier concept and matches the calm,
+            earthy tone of the website more naturally.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Home Page Direction</h2>
+      <div class="journey">
+        <article>
+          <h3>Landing Page Mood</h3>
+          <p>The home page is a full-screen landing page with the artwork blended into the natural earth palette.</p>
+          <p>It centers the site name and a comforting scripture so the first feeling is quiet, gentle, and safe.</p>
+          <p>The page should feel spacious and emotionally calm rather than busy.</p>
+          <p>Its purpose is to welcome the visitor before they move into the rest of the website.</p>
+        </article>
+        <article>
+          <h3>Home Page Content</h3>
+          <p>The landing page keeps its content minimal: the site name, a short reassuring line, a scripture verse, and a welcoming button.</p>
+          <p>This simplicity matches the wireframe and keeps the entry experience from feeling overwhelming.</p>
+          <p>The background art supports the message instead of competing with it.</p>
+          <p>The emotional tone is soft, prayerful, and restful.</p>
+        </article>
+        <article>
+          <h3>Navigation Flow</h3>
+          <p>From the home page, visitors use navigation and clear buttons to move into the rest of the website.</p>
+          <p>The main pages are Reflection, Quiet Space, Encouragement, and About.</p>
+          <p>This keeps the website page-based, while the landing page remains the emotional starting point.</p>
+          <p>The home page sets the tone, and the other pages carry the experience forward.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="pages-plan">
+      <h2>Separate Pages Plan</h2>
+      <div class="journey">
+        <article>
+          <h3>Reflection Page</h3>
+          <p>Users answer gentle questions about what they are feeling and receive a scripture-based response.</p>
+          <p>This page includes the pause moment, honest question, reflection prompt, and encouragement message.</p>
+        </article>
+        <article>
+          <h3>Quiet Space Page</h3>
+          <p>A soft writing area where users can journal thoughts, prayers, and emotions in their own words.</p>
+          <p>This page includes a calm verse, a large text area, and the option to return to reflection or restart.</p>
+        </article>
+        <article>
+          <h3>Encouragement Page</h3>
+          <p>A simple page for users who want immediate comfort without going through a full reflection flow.</p>
+          <p>It would feature short scripture messages, gentle reassurance, and a peaceful visual style.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Wireframes</h2>
+      <figure class="wireframe-image">
+        <img
+          src="images/wireframe.png"
+          alt="Hand-designed wireframes showing the mobile view and desktop or tablet view for Come As You Are"
+          width="1152"
+          height="768"
+        >
+        <figcaption>Wireframe reference for the mobile and desktop/tablet home page layout.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card">
+      <h2>Other Pages</h2>
+      <div class="journey">
+        <article>
+          <h3>About Page</h3>
+          <p>
+            A short personal story about the creator, the heart behind the project, and optional
+            links to a social platform or creative profile.
+          </p>
+        </article>
+        <article>
+          <h3>Scripture Vault</h3>
+          <p>
+            A searchable encouragement library with categories such as Anxiety, Hope, Gratitude, and
+            Overwhelmed.
+          </p>
+        </article>
+        <article>
+          <h3>Resources Page</h3>
+          <p>
+            Helpful external devotionals, faith-based communities, suggested readings, and support
+            tools for users who want to go deeper.
+          </p>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/lesedi-iketleng" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <img src="images/linkedin-logo.svg" alt="LinkedIn logo">
-      </a>
-      <a href="https://github.com/iketlenglesedi6-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <img src="images/github-logo.svg" alt="GitHub logo">
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <img src="images/instagram-logo.svg" alt="Instagram logo">
-      </a>
-    </div>
-    <p>&copy; <span id="currentyear"></span> Lesedi Pride Iketleng • Johannesburg, Gauteng</p>
-    <p id="lastModified"></p>
+  <footer class="site-footer">
+    <p>Created for WDD 231 Web Frontend Development</p>
+    <p class="footer-note">Theme direction: calm, honest, reflective, and welcoming.</p>
   </footer>
 </body>
 </html>
-
-

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Come As You Are logo</title>
+  <desc id="logoDesc">A calm faith-inspired logo with a rising path, soft halo, and subtle cross shape.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEDA86"/>
+      <stop offset="100%" stop-color="#E9D7C0"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="1" x2="0.9" y2="0.2">
+      <stop offset="0%" stop-color="#DAA38F"/>
+      <stop offset="100%" stop-color="#9B7D61"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="52" fill="url(#bg)"/>
+  <circle cx="160" cy="122" r="84" fill="#F4E4D3" opacity="0.88"/>
+  <path d="M107 82h16v35h34V133h-34v35H107V133H73v-16h34z" fill="#9B7D61" opacity="0.88"/>
+  <path d="M64 267c30-16 53-27 71-33 19-7 36-10 52-10 18 0 34 3 49 9-10-18-25-33-44-45-25-15-54-24-86-24-20 0-38 3-55 9 7-39 35-77 77-98 12-6 23-10 32-13-25 3-51 13-73 31C53 120 36 163 36 211c0 20 4 39 11 56z" fill="#92ADA4"/>
+  <path d="M57 281c39-44 83-68 131-68 34 0 66 12 95 36-31-10-63-6-96 11-22 11-44 15-67 12-23-2-44-14-63-37z" fill="url(#path)"/>
+  <circle cx="232" cy="83" r="14" fill="#FEDA86" opacity="0.95"/>
+</svg>
