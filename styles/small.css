@@ -208,6 +208,12 @@ main {
   background: var(--roasted-peach);
 }
 
+.roasted-peach h3,
+.roasted-peach p,
+.roasted-peach span {
+  color: #4f3d31;
+}
+
 .whole-wheat {
   background: var(--whole-wheat);
 }
@@ -226,6 +232,12 @@ main {
 
 .eucalyptus {
   background: var(--eucalyptus);
+}
+
+.eucalyptus h3,
+.eucalyptus p,
+.eucalyptus span {
+  color: #33423d;
 }
 
 .cream {
