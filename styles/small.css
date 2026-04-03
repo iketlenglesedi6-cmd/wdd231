@@ -133,6 +133,66 @@ main {
   padding-bottom: 2.5rem;
 }
 
+.plan-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(155, 125, 97, 0.18);
+  background: linear-gradient(180deg, rgba(255, 249, 242, 0.72), rgba(255, 249, 242, 0.56));
+  backdrop-filter: blur(10px);
+}
+
+.plan-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.plan-nav a {
+  color: #6b5647;
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.plan-nav-links a:hover,
+.plan-nav-links a:focus-visible {
+  color: #4f4034;
+}
+
+.plan-nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+}
+
+.plan-nav-brand img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.plan-nav-brand span {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #5f4a3c;
+}
+
+@media (max-width: 700px) {
+  .plan-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .plan-nav-links {
+    gap: 0.8rem;
+  }
+}
+
 .card {
   background: rgba(255, 252, 247, 0.88);
   border: 1px solid rgba(85, 66, 51, 0.1);
@@ -189,14 +249,14 @@ main {
 }
 
 .swatch h3,
-.swatch p {
-  color: #fff;
+.swatch p,
+.swatch span {
+  color: #3f2f24;
 }
 
 .swatch span {
   display: block;
   margin-top: 0.7rem;
-  color: rgba(255, 255, 255, 0.92);
   line-height: 1.55;
 }
 
@@ -204,14 +264,14 @@ main {
   background: var(--milky-coffee);
 }
 
-.roasted-peach {
-  background: var(--roasted-peach);
+.milky-coffee h3,
+.milky-coffee p,
+.milky-coffee span {
+  color: #fffaf6;
 }
 
-.roasted-peach h3,
-.roasted-peach p,
-.roasted-peach span {
-  color: #4f3d31;
+.roasted-peach {
+  background: var(--roasted-peach);
 }
 
 .whole-wheat {
@@ -232,12 +292,6 @@ main {
 
 .eucalyptus {
   background: var(--eucalyptus);
-}
-
-.eucalyptus h3,
-.eucalyptus p,
-.eucalyptus span {
-  color: #33423d;
 }
 
 .cream {

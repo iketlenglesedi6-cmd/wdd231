@@ -5,16 +5,8 @@
   }
 
   main {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     align-items: start;
-  }
-
-  .card:nth-child(4),
-  .card:nth-child(6),
-  .card:nth-child(7),
-  .card:nth-child(8),
-  .card:nth-child(9) {
-    grid-column: 1 / -1;
   }
 
   .palette-grid {
