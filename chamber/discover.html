@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Braamfontein landmarks, arts venues, and local highlights through the Braamfontein Chamber of Commerce.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>Discover Braamfontein | Braamfontein Chamber of Commerce</title>
+
+  <meta property="og:title" content="Discover Braamfontein">
+  <meta property="og:description" content="Explore eight standout places and experiences in Braamfontein's creative district.">
+  <meta property="og:image" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/images/social-share.svg">
+  <meta property="og:url" content="https://iketlenglesedi6-cmd.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/chamber.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/chamber-mark.svg" alt="Braamfontein Chamber mark" width="48" height="48">
+        <div class="brand-text">
+          <span class="brand-braam">BRAAM</span>
+          <span class="brand-name">Braamfontein Chamber</span>
+          <span class="brand-tagline">Johannesburg Creative District</span>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-icon" aria-hidden="true"><span></span></span>
+        <span class="menu-text sr-only">Menu</span>
+      </button>
+    </div>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="discover.html" aria-current="page">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-discover">
+      <div class="hero-content">
+        <p class="hero-tag">DISCOVER BRAAMFONTEIN</p>
+        <h1>Explore the district behind the chamber</h1>
+        <p>
+          Braamfontein blends culture, education, nightlife, and design in one walkable part of Johannesburg.
+          These local highlights help visitors and future chamber members get a feel for the district's energy.
+        </p>
+      </div>
+      <aside class="hero-spotlight discover-summary">
+        <p class="badge badge-verified"><span class="badge-icon" aria-hidden="true"></span>Local visitor snapshot</p>
+        <div class="discover-summary-block">
+          <span class="meta-label">Area Focus</span>
+          <strong class="meta-value">Creative, academic, and mixed-use hub</strong>
+        </div>
+        <div class="discover-summary-block">
+          <span class="meta-label">Best For</span>
+          <strong class="meta-value">Arts, events, workspaces, and weekend exploring</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="visit-banner" aria-live="polite">
+      <h2>Your Visit</h2>
+      <p id="visit-message">Loading your visit message...</p>
+    </section>
+
+    <section class="discover-intro">
+      <div>
+        <p class="hero-tag">AREA HIGHLIGHTS</p>
+        <h2>Eight places to know in and around Braam</h2>
+      </div>
+      
+    </section>
+
+    <section id="discover-grid" class="discover-grid" aria-label="Braamfontein highlights"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-block">
+        <h3>Contact</h3>
+        <p>Braamfontein Chamber of Commerce</p>
+        <p>125 Juta Street, Braamfontein, Johannesburg</p>
+        <p>Phone: +27 11 555 0100</p>
+        <p>Email: info@joburgchamber.businesses.com</p>
+      </div>
+      <div class="footer-block">
+        <h3>Stay Connected</h3>
+        <p>Follow our updates, workshops, and member news.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook icon" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn icon" width="20" height="20">
+          </a>
+        </div>
+      </div>
+      <div class="footer-block footer-meta">
+        <p><span>&copy;</span> <span id="currentyear"></span> Lesedi Pride Iketleng</p>
+        <p>WDD 231 Chamber Project</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
