@@ -1,5 +1,5 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root { --mc:#9b7d61; --rp:#daa38f; --ww:#e9d7c0; --eu:#92ada4; --cr:#feda86; --ink:#554233; --sf:rgba(255,250,245,0.92); --bd:rgba(85,66,51,0.16); }
+:root { --mc:#7a5a43; --rp:#8a5a43; --ww:#e9d7c0; --eu:#92ada4; --cr:#feda86; --ink:#554233; --sf:rgba(255,250,245,0.92); --bd:rgba(85,66,51,0.16); }
 html, body { height: 100%; overflow-x: hidden; }
 body { font-family: "Manrope", sans-serif; background: #faf4ec; color: var(--ink); min-height: 100vh; }
 body::before { content: ""; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; opacity: 0.4; }
@@ -118,3 +118,4 @@ footer { position: relative; z-index: 1; padding: 48px 48px 36px; display: flex;
     word-break: break-word;
   }
 }
+

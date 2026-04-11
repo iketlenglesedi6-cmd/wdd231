@@ -1,8 +1,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --milky-coffee: #9b7d61;
-  --roasted-peach: #daa38f;
+  --milky-coffee: #7a5a43;
+  --roasted-peach: #8a5a43;
   --whole-wheat: #e9d7c0;
   --eucalyptus: #92ada4;
   --cream: #feda86;
@@ -184,3 +184,4 @@ footer { position: relative; z-index: 1; padding: 48px 48px 36px; display: flex;
   footer { padding: 40px 24px 32px; }
   .footer-nav { flex-wrap: wrap; justify-content: center; gap: 14px; }
 }
+
