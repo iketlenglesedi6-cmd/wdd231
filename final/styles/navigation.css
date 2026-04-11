@@ -2,14 +2,14 @@
   --nav-surface: rgba(255, 249, 242, 0.9);
   --nav-panel: rgba(255, 251, 246, 0.96);
   --nav-shadow: 0 24px 48px rgba(85, 66, 51, 0.08);
-  --nav-link-color: #9b7d61;
+  --nav-link-color: #7a5a43;
   --nav-link-active: #554233;
   --nav-underline: #daa38f;
   --nav-panel-border: rgba(155, 125, 97, 0.16);
   --nav-panel-soft: rgba(233, 215, 192, 0.18);
   --nav-panel-soft-active: rgba(218, 163, 143, 0.16);
   --nav-panel-heading: #554233;
-  --nav-panel-copy: #9b7d61;
+  --nav-panel-copy: #7a5a43;
 }
 
 .skip-link {
