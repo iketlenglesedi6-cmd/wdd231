@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fresh word every morning. Return each day to receive a verse chosen just for today - your daily bread for the soul.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>Daily Bread - Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/daily-bread.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/daily-bread.js" defer></script>
+</head>
+<body>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="36" height="36">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home">Home</a></li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group active">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html" class="active"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="date-banner">
+    <div class="date-pill">
+      <span class="date-day" id="dateDayName"></span>
+      <div class="date-sep"></div>
+      <span class="date-full" id="dateFull"></span>
+    </div>
+  </header>
+
+  <section class="ph">
+    <div class="pl">Daily Bread</div>
+    <h1>A word for<br><em>today.</em></h1>
+    <p>Return each morning and receive something to carry with you.<br>One verse. One reflection. Just for today.</p>
+  </section>
+
+  <main>
+    <section class="main-card-wrap">
+      <div class="main-card">
+        <div class="season-badge">
+          <span class="season-icon" id="seasonIcon"></span>
+          <span class="season-name" id="seasonName"></span>
+        </div>
+        <p class="main-verse" id="mainVerse"></p>
+        <div class="main-ref" id="mainRef"></div>
+        <div class="main-divider">
+          <div class="md-line"></div>
+          <div class="md-diamond"></div>
+          <div class="md-line"></div>
+        </div>
+        <p class="main-reflection" id="mainReflection"></p>
+        <div class="card-actions">
+          <button class="bp" id="saveToday" type="button"><span>Save today's verse</span></button>
+          <a href="quiet-space.html" class="bs">Reflect on this &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="streak-wrap">
+      <div class="streak-bar">
+        <span class="streak-label">Visit streak</span>
+        <span class="streak-num" id="streakNum">0</span>
+        <span class="streak-label">days</span>
+        <div class="streak-days" id="streakDots"></div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-label">This week's bread</div>
+      <div class="week-grid" id="weekGrid"></div>
+    </section>
+
+    <section class="saved-section reveal">
+      <div class="section-label">Verses you have saved</div>
+      <div class="saved-grid" id="savedGrid"></div>
+    </section>
+  </main>
+
+  <div class="strip">
+    <blockquote>"Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me."</blockquote>
+    <cite>John 5:39</cite>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalDay">
+    <div class="modal">
+      <div class="modal-day" id="modalDay"></div>
+      <p class="modal-verse" id="modalVerse"></p>
+      <div class="modal-ref" id="modalRef"></div>
+      <p class="modal-reflection" id="modalReflection"></p>
+      <div class="modal-actions">
+        <button class="bp" id="saveFromModal" type="button"><span>Save this verse</span></button>
+        <button class="modal-close" id="closeModal" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span class="fb">Come As You Are</span>
+    <ul class="fn">
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="quiet-space.html">Quiet Space</a></li>
+      <li><a href="encouragement.html">Encouragement</a></li>
+      <li><a href="daily-bread.html">Daily Bread</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <p class="fc">&copy; 2026 Lesedi Pride Iketleng &middot; WDD 231 &middot; calm, honest, reflective, and welcoming</p>
+    <div class="footer-utility">
+      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+</body>
+</html>

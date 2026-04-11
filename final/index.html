@@ -1,15 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final Project</title>
+  <title>Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/home.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>Final Project</h1>
-    <p>This page is a placeholder for the WDD 231 final project.</p>
-    <p><a href="../index.html">Back to Home</a></p>
-  </main>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="36" height="36">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home active">Home</a></li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-ornament">
+      <div class="hero-ornament-line"></div>
+      <div class="hero-ornament-diamond"></div>
+      <span class="hero-ornament-text">A sanctuary for the soul</span>
+      <div class="hero-ornament-diamond"></div>
+      <div class="hero-ornament-line"></div>
+    </div>
+
+    <div class="hero-logo-wrap">
+      <img
+        src="images/come-as-you-are-logo-tree-of-life.svg"
+        alt="Come As You Are tree of life logo"
+        width="280"
+        height="300"
+      >
+    </div>
+
+    <h1 class="hero-title">
+      Come As<br><em>You Are</em>
+    </h1>
+
+    <p class="hero-subtitle">
+      You do not have to have the right words today.<br>Start where you are.
+    </p>
+
+    <div class="hero-scripture">
+      <blockquote>
+        "Come to me, all who are weary and burdened,<br>and I will give you rest."
+      </blockquote>
+      <cite>Matthew 11:28</cite>
+    </div>
+
+    <div class="hero-cta-wrap">
+      <a href="reflection.html" class="btn-primary">
+        <span>Begin Your Journey</span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </a>
+      <span class="cta-note">You are safe here.</span>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Explore</span>
+    </div>
+  </section>
+
+  <section class="section-welcome">
+    <div class="section-label reveal reveal-delay-1">A word before you begin</div>
+    <h2 class="reveal reveal-delay-2">
+      This is not a space<br>that asks you to be <em>okay.</em>
+    </h2>
+    <br>
+    <p class="reveal reveal-delay-3">
+      Whether you arrived carrying something heavy, or simply wandered in looking for a quiet moment,
+      you are welcome here. Exactly as you are. No performance required, no spiritual credentials
+      needed. This is a place to breathe, to be honest, and to be met.
+    </p>
+  </section>
+
+  <div class="divider reveal reveal-delay-1">
+    <div class="divider-line"></div>
+    <div class="divider-mark">
+      <div class="divider-dot"></div>
+      <div class="divider-diamond"></div>
+      <div class="divider-dot"></div>
+    </div>
+    <div class="divider-line"></div>
+  </div>
+
+  <section class="section-paths">
+    <div class="paths-header reveal reveal-delay-1">
+      <div class="section-label">Where would you like to go?</div>
+      <h2>Choose your <em>path</em></h2>
+    </div>
+
+    <div class="paths-grid">
+      <a href="reflection.html" class="path-card reveal reveal-delay-1">
+        <svg class="path-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="20" stroke="#9b7d61" stroke-width="1" opacity="0.4"/>
+          <path d="M24 10 C24 10 18 18 18 24 C18 30 21 34 24 36 C27 34 30 30 30 24 C30 18 24 10 24 10Z" fill="#daa38f" opacity="0.45"/>
+          <line x1="24" y1="10" x2="24" y2="36" stroke="#9b7d61" stroke-width="0.8" opacity="0.4"/>
+          <line x1="18" y1="24" x2="30" y2="24" stroke="#9b7d61" stroke-width="0.8" opacity="0.4"/>
+        </svg>
+        <h3>Carry</h3>
+        <p>Begin by naming what feels true today. Move gently into reflection, or bring what is on your heart into prayer without needing to have it all figured out first.</p>
+        <div class="path-link">
+          <div class="path-link-line"></div>
+          Begin with Reflection
+        </div>
+      </a>
+
+      <a href="encouragement.html" class="path-card reveal reveal-delay-2">
+        <svg class="path-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="12" width="32" height="26" rx="2" stroke="#9b7d61" stroke-width="1" opacity="0.4" fill="#daa38f" fill-opacity="0.1"/>
+          <line x1="14" y1="20" x2="34" y2="20" stroke="#9b7d61" stroke-width="0.8" opacity="0.35"/>
+          <line x1="14" y1="25" x2="34" y2="25" stroke="#9b7d61" stroke-width="0.8" opacity="0.35"/>
+          <line x1="14" y1="30" x2="26" y2="30" stroke="#9b7d61" stroke-width="0.8" opacity="0.35"/>
+          <path d="M30 8 L30 14" stroke="#daa38f" stroke-width="1" opacity="0.6" stroke-linecap="round"/>
+          <circle cx="30" cy="7" r="2" fill="#feda86" opacity="0.8"/>
+        </svg>
+        <h3>Receive</h3>
+        <p>When you need something to hold onto, this path offers comfort back to you through encouragement, daily bread, and scripture chosen for what your soul may need.</p>
+        <div class="path-link">
+          <div class="path-link-line"></div>
+          Receive a word
+        </div>
+      </a>
+
+      <a href="quiet-space.html" class="path-card reveal reveal-delay-3">
+        <svg class="path-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 38 C24 38 8 28 8 18 C8 13 12 10 17 10 C20 10 22 12 24 14 C26 12 28 10 31 10 C36 10 40 13 40 18 C40 28 24 38 24 38Z" fill="#daa38f" opacity="0.3" stroke="#9b7d61" stroke-width="1"/>
+          <circle cx="24" cy="22" r="5" fill="#feda86" opacity="0.55"/>
+        </svg>
+        <h3>Rest</h3>
+        <p>Stay a while. Write freely, breathe slowly, or light a candle for what matters. This part of the sanctuary is for stillness, release, and being gently held.</p>
+        <div class="path-link">
+          <div class="path-link-line"></div>
+          Enter Quiet Space
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="scripture-strip reveal reveal-delay-2">
+    <blockquote>
+      "He heals the brokenhearted and binds up their wounds."
+    </blockquote>
+    <cite>Psalm 147:3</cite>
+  </div>
+
+  <section class="home-about-whisper reveal reveal-delay-2">
+    <p>If you would like to know the heart behind this place, you can visit <a href="about.html">About</a>.</p>
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <img src="images/come-as-you-are-logo-tree-of-life.svg" alt="Come As You Are footer logo" width="280" height="300">
+      <span class="footer-brand">Come As You Are</span>
+    </div>
+
+    <ul class="footer-nav">
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="quiet-space.html">Quiet Space</a></li>
+      <li><a href="encouragement.html">Encouragement</a></li>
+      <li><a href="scripture-vault.html">Scripture Vault</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <p class="footer-copy">&copy; 2026 Lesedi Pride Iketleng · WDD 231 · calm, honest, reflective, and welcoming</p>
+    <div class="footer-utility">
+      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
 </body>
 </html>

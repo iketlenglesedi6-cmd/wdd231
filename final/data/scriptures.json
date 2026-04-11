@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "category": "Peace",
+    "source": "Bible",
+    "quote": "\"Be still, and know that I am God.\"",
+    "reference": "Psalm 46:10",
+    "affirmation": "You are allowed to stop striving. This moment is enough.",
+    "context": "Psalm 46 was written in the face of national disaster - chaos, shaking earth, roaring seas. And in the middle of all of it, God says: be still. Not because the chaos has stopped, but because He is present in it."
+  },
+  {
+    "id": 2,
+    "category": "Hope",
+    "source": "Bible",
+    "quote": "\"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.\"",
+    "reference": "Jeremiah 29:11",
+    "affirmation": "Your story is not finished. The hardest chapters are not the last ones.",
+    "context": "This was written to exiles - people displaced, confused, and far from home. God's promise of a future was not contingent on their circumstances being resolved first."
+  },
+  {
+    "id": 3,
+    "category": "Anxiety",
+    "source": "Bible",
+    "quote": "\"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.\"",
+    "reference": "Philippians 4:6",
+    "affirmation": "Every worry is a prayer waiting to happen. You are allowed to hand it over.",
+    "context": "Paul wrote these words from prison - not from comfort. The peace he describes is not the result of good circumstances. It is available in spite of them."
+  },
+  {
+    "id": 4,
+    "category": "Strength",
+    "source": "Bible",
+    "quote": "\"I can do all this through him who gives me strength.\"",
+    "reference": "Philippians 4:13",
+    "affirmation": "Not strength you manufacture. Strength that is given - when you need it, as you need it.",
+    "context": "This verse is often quoted in triumph, but Paul wrote it in the context of learning to be content in want. The strength offered here is for endurance, not just achievement."
+  },
+  {
+    "id": 5,
+    "category": "Grief",
+    "source": "Bible",
+    "quote": "\"He heals the brokenhearted and binds up their wounds.\"",
+    "reference": "Psalm 147:3",
+    "affirmation": "Broken things are not discarded here. They are gathered and tended.",
+    "context": "The Hebrew word for 'binds up' is the same used for a physician setting a broken bone - active, careful, intentional tending. This is not passive comfort. It is skilled, loving repair."
+  },
+  {
+    "id": 6,
+    "category": "Guidance",
+    "source": "Bible",
+    "quote": "\"Trust in the Lord with all your heart and lean not on your own understanding.\"",
+    "reference": "Proverbs 3:5",
+    "affirmation": "Understanding will come. For now, trust is enough.",
+    "context": "Leaning on your own understanding is not condemned - it is gently redirected. Your mind is a gift. But there are things larger than what it can hold."
+  },
+  {
+    "id": 7,
+    "category": "Loneliness",
+    "source": "Bible",
+    "quote": "\"The Lord is close to the brokenhearted and saves those who are crushed in spirit.\"",
+    "reference": "Psalm 34:18",
+    "affirmation": "He is not distant from your worst moments. He is nearest there.",
+    "context": "This psalm was written by David while pretending to be mad to escape his enemies. He wrote theology from the floor. The words are true even - especially - in the lowest places."
+  },
+  {
+    "id": 8,
+    "category": "Peace",
+    "source": "Bible",
+    "quote": "\"Peace I leave with you; my peace I give you. I do not give to you as the world gives.\"",
+    "reference": "John 14:27",
+    "affirmation": "The peace being offered is not the absence of trouble. It is a presence greater than the trouble.",
+    "context": "Jesus said this on the night of his arrest, hours before everything fell apart. The peace was not conditional on the storm not coming."
+  },
+  {
+    "id": 9,
+    "category": "Identity",
+    "source": "Bible",
+    "quote": "\"For we are God's handiwork, created in Christ Jesus to do good works, which God prepared in advance for us to do.\"",
+    "reference": "Ephesians 2:10",
+    "affirmation": "You are not an accident. You are crafted - with purpose already built in.",
+    "context": "The Greek word for 'handiwork' is poiema - the root of our word poem. You are not a mistake or an oversight. You are a composition."
+  },
+  {
+    "id": 10,
+    "category": "Hope",
+    "source": "Bible",
+    "quote": "\"The steadfast love of the Lord never ceases; his mercies never come to an end. They are new every morning.\"",
+    "reference": "Lamentations 3:22-23",
+    "affirmation": "Whatever yesterday held - today is a new measure of mercy.",
+    "context": "Lamentations is one of the most honest books in Scripture - raw grief, devastation, confusion. And from inside that darkness, the writer arrives at this. New every morning."
+  },
+  {
+    "id": 11,
+    "category": "Strength",
+    "source": "Bible",
+    "quote": "\"He gives strength to the weary and increases the power of the weak.\"",
+    "reference": "Isaiah 40:29",
+    "affirmation": "Weakness is not the end of the story. It is where the gift begins.",
+    "context": "Isaiah 40 follows 39 chapters of warning and judgment with this: comfort, comfort my people. The shift is intentional. Strength is offered precisely to those who have run out of their own."
+  },
+  {
+    "id": 12,
+    "category": "Identity",
+    "source": "Bible",
+    "quote": "\"I praise you because I am fearfully and wonderfully made.\"",
+    "reference": "Psalm 139:14",
+    "affirmation": "Wonderful. That is the word used for how you were made. Not adequate. Wonderful.",
+    "context": "Psalm 139 is one of the most intimate in all of Scripture - God knows when you sit and rise, your thoughts from afar, your words before they form. And he responds to all of that knowledge with delight."
+  },
+  {
+    "id": 13,
+    "category": "Courage",
+    "source": "Bible",
+    "quote": "\"Be strong and courageous. Do not be afraid; the Lord your God will be with you wherever you go.\"",
+    "reference": "Joshua 1:9",
+    "affirmation": "Wherever you go today - you are not going alone.",
+    "context": "This was said to Joshua immediately after Moses died. A new leader, a new territory, an impossible task. And God's response was not strategy. It was presence."
+  },
+  {
+    "id": 14,
+    "category": "Grief",
+    "source": "Bible",
+    "quote": "\"Blessed are those who mourn, for they will be comforted.\"",
+    "reference": "Matthew 5:4",
+    "affirmation": "Your grief does not disqualify you from comfort. It is the very doorway to it.",
+    "context": "Jesus placed mourning among the blessed. Not mourning that is quickly resolved, but mourning held honestly. The comfort promised is not immediate - it is certain."
+  },
+  {
+    "id": 15,
+    "category": "Healing",
+    "source": "Bible",
+    "quote": "\"But I will restore you to health and heal your wounds, declares the Lord.\"",
+    "reference": "Jeremiah 30:17",
+    "affirmation": "Restoration is not wishful thinking here. It is a declaration.",
+    "context": "This was spoken to a people in exile - broken, scattered, far from everything familiar. The promise of healing was spoken into the worst of circumstances, not after them."
+  },
+  {
+    "id": 16,
+    "category": "Anxiety",
+    "source": "Bible",
+    "quote": "\"Cast all your anxiety on him because he cares for you.\"",
+    "reference": "1 Peter 5:7",
+    "affirmation": "He cares for you - not your performance, not your progress. You.",
+    "context": "The word 'cast' implies an act of release - a physical throwing off of something heavy. You are not asked to manage your anxiety. You are invited to put it down."
+  },
+  {
+    "id": 17,
+    "category": "Hope",
+    "source": "Bible",
+    "quote": "\"Weeping may stay for the night, but rejoicing comes in the morning.\"",
+    "reference": "Psalm 30:5",
+    "affirmation": "Morning comes. It always comes. Hold on through the night.",
+    "context": "This is not a dismissal of the weeping. The night is real. So is what follows. Both are held in this single verse."
+  },
+  {
+    "id": 18,
+    "category": "Guidance",
+    "source": "Bible",
+    "quote": "\"Your word is a lamp for my feet, a light on my path.\"",
+    "reference": "Psalm 119:105",
+    "affirmation": "You do not need to see the whole road. The light is enough for the next step.",
+    "context": "A lamp for the feet illuminates only what is immediately ahead - not the full journey. The invitation is to trust step by step, not to demand the whole map first."
+  },
+  {
+    "id": 19,
+    "category": "Loneliness",
+    "source": "Bible",
+    "quote": "\"The Lord himself goes before you and will be with you; he will never leave you nor forsake you.\"",
+    "reference": "Deuteronomy 31:8",
+    "affirmation": "You have not been abandoned. Not in this room, not in this moment, not ever.",
+    "context": "Moses spoke these words to all of Israel - and then specifically to Joshua - as they faced an uncertain future. The promise was not comfortable circumstances. It was constant company."
+  },
+  {
+    "id": 20,
+    "category": "Identity",
+    "source": "Bible",
+    "quote": "\"You are the light of the world. A town built on a hill cannot be hidden.\"",
+    "reference": "Matthew 5:14",
+    "affirmation": "You carry light. You may not feel it today - but it is there, and it is needed.",
+    "context": "Jesus said this to ordinary people - fishermen, tax collectors, people with ordinary fears and failures. He did not say you might become light. He said you are."
+  },
+  {
+    "id": 21,
+    "category": "Peace",
+    "source": "Bible",
+    "quote": "\"In returning and rest you shall be saved; in quietness and trust shall be your strength.\"",
+    "reference": "Isaiah 30:15",
+    "affirmation": "Quiet trust is a form of strength. Not absence of effort - presence of faith.",
+    "context": "God said this to a people who kept looking for military alliances to save them. His offer was simpler and harder: stop, return, be still. The strength they needed was not in the strategies they were building."
+  },
+  {
+    "id": 22,
+    "category": "Courage",
+    "source": "Bible",
+    "quote": "\"The Lord is my light and my salvation - whom shall I fear? The Lord is the stronghold of my life - of whom shall I be afraid?\"",
+    "reference": "Psalm 27:1",
+    "affirmation": "You are lit from within by something that cannot be taken.",
+    "context": "David wrote this Psalm while surrounded by enemies - real, physical threats. His confidence was not in his circumstances. It was in who was with him inside them."
+  },
+  {
+    "id": 23,
+    "category": "Healing",
+    "source": "Bible",
+    "quote": "\"Come to me, all who are weary and burdened, and I will give you rest.\"",
+    "reference": "Matthew 11:28",
+    "affirmation": "Rest is not earned. It is offered freely. You only have to come.",
+    "context": "The Greek word for 'rest' here means an easing of burden, a refreshing. It was not offered to those who had worked hard enough. It was offered to those who were simply done."
+  },
+  {
+    "id": 24,
+    "category": "Hope",
+    "source": "Bible",
+    "quote": "\"And we know that in all things God works for the good of those who love him.\"",
+    "reference": "Romans 8:28",
+    "affirmation": "All things. Not just the clean ones. The broken things too are working toward something good.",
+    "context": "Paul wrote this in the same chapter where he describes groaning, suffering, and waiting. The promise was not that all things are good. It was that God is working through all of them."
+  },
+  {
+    "id": 25,
+    "category": "Identity",
+    "source": "Bible",
+    "quote": "\"Before I formed you in the womb I knew you, before you were born I set you apart.\"",
+    "reference": "Jeremiah 1:5",
+    "affirmation": "You were known before you had a name. That knowing has never stopped.",
+    "context": "God said this to Jeremiah when Jeremiah was trying to disqualify himself from being used. The knowledge preceded the calling - and both preceded any performance."
+  },
+  {
+    "id": 26,
+    "category": "Strength",
+    "source": "Bible",
+    "quote": "\"My grace is sufficient for you, for my power is made perfect in weakness.\"",
+    "reference": "2 Corinthians 12:9",
+    "affirmation": "Your weakness is not disqualifying. It is the very place grace is most at home.",
+    "context": "Paul received this answer after begging God three times to remove a specific suffering. The response was not the removal of the thorn. It was the discovery that the thorn was not the end."
+  },
+  {
+    "id": 27,
+    "category": "Gratitude",
+    "source": "Bible",
+    "quote": "\"Give thanks in all circumstances; for this is God's will for you in Christ Jesus.\"",
+    "reference": "1 Thessalonians 5:18",
+    "affirmation": "Gratitude is not denial of pain. It is choosing to look for light inside it.",
+    "context": "In all circumstances - not for all circumstances. The gratitude is not a dismissal of difficulty. It is practiced alongside it."
+  },
+  {
+    "id": 28,
+    "category": "Anxiety",
+    "source": "Bible",
+    "quote": "\"Do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.\"",
+    "reference": "Matthew 6:34",
+    "affirmation": "Today is enough. You do not have to carry tomorrow as well.",
+    "context": "Jesus said this to people who were genuinely uncertain about their futures - food, shelter, clothing. The invitation to stay in today was not a dismissal of real concern. It was a mercy."
+  },
+  {
+    "id": 29,
+    "category": "Loneliness",
+    "source": "Bible",
+    "quote": "\"I will not leave you as orphans; I will come to you.\"",
+    "reference": "John 14:18",
+    "affirmation": "You have not been left. The presence promised is real and it is here.",
+    "context": "Jesus said this at the Last Supper - knowing his disciples were about to feel utterly abandoned. The promise was made before the abandonment, so they would have it to hold when they needed it most."
+  },
+  {
+    "id": 30,
+    "category": "Healing",
+    "source": "Bible",
+    "quote": "\"He restores my soul.\"",
+    "reference": "Psalm 23:3",
+    "affirmation": "Restoration is a process. You are already in it.",
+    "context": "The shepherd metaphor carries through this entire psalm. A shepherd does not restore a lamb by instruction. He lifts it, tends it, carries it. The restoration is hands-on."
+  },
+  {
+    "id": 31,
+    "category": "Hope",
+    "source": "Scripture of Mormon",
+    "quote": "\"Wherefore, whoso believeth in God might with surety hope for a better world, yea, even a place at the right hand of God.\"",
+    "reference": "Ether 12:4 - Book of Mormon",
+    "affirmation": "Hope is not passive. It anchors. It is something you hold that also holds you.",
+    "context": "Moroni wrote this near the end of his people's destruction - alone, surrounded by loss. His hope was not naive. It was hard-won and deeply rooted."
+  },
+  {
+    "id": 32,
+    "category": "Strength",
+    "source": "Scripture of Mormon",
+    "quote": "\"I will go and do the things which the Lord hath commanded, for I know that the Lord giveth no commandments unto the children of men, save he shall prepare a way.\"",
+    "reference": "1 Nephi 3:7 - Book of Mormon",
+    "affirmation": "The way is being prepared even when you cannot see it.",
+    "context": "Nephi said this when asked to do something that seemed impossible. He did not begin with certainty about how. He began with trust about who was sending him."
+  },
+  {
+    "id": 33,
+    "category": "Peace",
+    "source": "D&C",
+    "quote": "\"Be of good cheer, for I will lead you along.\"",
+    "reference": "Doctrine & Covenants 78:18",
+    "affirmation": "You are being led. Not abandoned. Led.",
+    "context": "This was given to early church members facing serious financial and legal pressure. The comfort offered was not resolution of the problems - it was the promise of ongoing, personal guidance through them."
+  },
+  {
+    "id": 34,
+    "category": "Identity",
+    "source": "Scripture of Mormon",
+    "quote": "\"Behold, you are my son; wherefore, look unto me, and endure to the end.\"",
+    "reference": "Doctrine & Covenants 9:14",
+    "affirmation": "You are claimed. The relationship is not conditional on your performance.",
+    "context": "This was personal counsel from God to Oliver Cowdery after a difficult experience. The words 'my son' came before any instruction - relationship before task."
+  },
+  {
+    "id": 35,
+    "category": "Guidance",
+    "source": "Scripture of Mormon",
+    "quote": "\"But behold, if ye will awake and arouse your faculties, even to an experiment upon my words, and exercise a particle of faith.\"",
+    "reference": "Alma 32:27 - Book of Mormon",
+    "affirmation": "You only need a particle. A particle is enough to begin.",
+    "context": "Alma compared faith to a seed - not a fully formed tree. You do not need certainty to begin. You only need to plant something small and tend it honestly."
+  },
+  {
+    "id": 36,
+    "category": "Anxiety",
+    "source": "Bible",
+    "quote": "\"The Lord is my shepherd; I shall not want.\"",
+    "reference": "Psalm 23:1",
+    "affirmation": "Want - deep, real, anxious want - is met here. By a shepherd who tends.",
+    "context": "The Psalm opens not with a command but a declaration. The Lord is my shepherd. Present tense. Right now. In this moment of need."
+  },
+  {
+    "id": 37,
+    "category": "Courage",
+    "source": "Bible",
+    "quote": "\"Even though I walk through the darkest valley, I will fear no evil, for you are with me.\"",
+    "reference": "Psalm 23:4",
+    "affirmation": "The valley is real. So is the presence walking through it with you.",
+    "context": "The darkest valley - translated elsewhere as the valley of the shadow of death - is not a detour to be avoided. It is a path walked with company."
+  },
+  {
+    "id": 38,
+    "category": "Hope",
+    "source": "Bible",
+    "quote": "\"Arise, shine; for thy light is come, and the glory of the Lord is risen upon thee.\"",
+    "reference": "Isaiah 60:1",
+    "affirmation": "Rise. Not because you feel ready. Rise because the light has already come to you.",
+    "context": "Isaiah 60 begins as an address to a broken and exhausted people. The command to arise comes not after they have recovered, but into the darkness - because the light has already arrived."
+  },
+  {
+    "id": 39,
+    "category": "Healing",
+    "source": "Bible",
+    "quote": "\"He was pierced for our transgressions, he was crushed for our griefs; by his wounds we are healed.\"",
+    "reference": "Isaiah 53:5",
+    "affirmation": "The healing comes through the wound. Not around it.",
+    "context": "This is one of the most profound passages in all of Scripture - written 700 years before the cross. The atonement carried not just sin, but grief. Your suffering was included in what he carried."
+  },
+  {
+    "id": 40,
+    "category": "Gratitude",
+    "source": "Bible",
+    "quote": "\"This is the day the Lord has made; let us rejoice and be glad in it.\"",
+    "reference": "Psalm 118:24",
+    "affirmation": "Today is a made thing - intentional, specific, yours.",
+    "context": "Psalm 118 is the most quoted psalm in the New Testament. It was sung at Passover - a collective act of gratitude in the middle of a world that had given them every reason for grief."
+  },
+  {
+    "id": 41,
+    "category": "Loneliness",
+    "source": "Bible",
+    "quote": "\"Never will I leave you; never will I forsake you.\"",
+    "reference": "Hebrews 13:5",
+    "affirmation": "Never is the strongest word in the language. He uses it here for you.",
+    "context": "This quote draws from multiple Old Testament promises. By the time it reaches Hebrews, it is a settled, layered conviction - not a new idea but an ancient, proven one."
+  },
+  {
+    "id": 42,
+    "category": "Peace",
+    "source": "Bible",
+    "quote": "\"Come to me, all who are thirsty, come to the waters; and you who have no money, come.\"",
+    "reference": "Isaiah 55:1",
+    "affirmation": "You do not have to earn what is freely given. Come empty. That is enough.",
+    "context": "The invitation is specifically to those who have nothing. No resources, no credentials, no spiritual currency. The qualification for coming is the thirst itself."
+  },
+  {
+    "id": 43,
+    "category": "Guidance",
+    "source": "Bible",
+    "quote": "\"I am the way and the truth and the life.\"",
+    "reference": "John 14:6",
+    "affirmation": "When you cannot find the way, the Way itself is available.",
+    "context": "Thomas had just asked how they could know the way, admitting they did not know where Jesus was going. The answer was not a map. It was a person."
+  },
+  {
+    "id": 44,
+    "category": "Strength",
+    "source": "D&C",
+    "quote": "\"Therefore, dearly beloved brethren, let us cheerfully do all things that lie in our power; and then may we stand still, with the utmost assurance, to see the salvation of God.\"",
+    "reference": "Doctrine & Covenants 123:17",
+    "affirmation": "Do what you can. Then stand still. The rest belongs to God.",
+    "context": "Joseph Smith wrote this from Liberty Jail - one of the hardest moments of his life. Cheerfully here does not mean happily. It means with courage, not despair."
+  },
+  {
+    "id": 45,
+    "category": "Identity",
+    "source": "Scripture of Mormon",
+    "quote": "\"Remember the worth of souls is great in the sight of God.\"",
+    "reference": "Doctrine & Covenants 18:10",
+    "affirmation": "Great. Not adequate, not acceptable - great. That is your worth in God's sight.",
+    "context": "This was given in the context of missionary work, but the truth it contains is personal. Every soul. Including yours. Including the person you are struggling to see value in today."
+  },
+  {
+    "id": 46,
+    "category": "Hope",
+    "source": "Bible",
+    "quote": "\"The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you.\"",
+    "reference": "Zephaniah 3:17",
+    "affirmation": "He delights in you - not in the version you are becoming. In you, right now.",
+    "context": "Zephaniah wrote this to a people under judgment. And in the middle of the warning, he described a God who sings over his people with joy. The delight is not earned. It is inherent."
+  },
+  {
+    "id": 47,
+    "category": "Courage",
+    "source": "Bible",
+    "quote": "\"Have I not commanded you? Be strong and courageous. Do not be frightened.\"",
+    "reference": "Joshua 1:9",
+    "affirmation": "The command to be courageous is itself the promise that courage is available to you.",
+    "context": "Three times in four verses, God tells Joshua to be strong and courageous. The repetition is not pressure - it is reassurance. You can do this. I am with you."
+  },
+  {
+    "id": 48,
+    "category": "Grief",
+    "source": "Bible",
+    "quote": "\"Jesus wept.\"",
+    "reference": "John 11:35",
+    "affirmation": "The Son of God stood at a tomb and cried. Your grief is not weakness. It is sacred.",
+    "context": "Jesus wept at Lazarus's tomb even knowing he was about to raise him. He did not bypass the grief because resurrection was coming. He entered it fully first."
+  },
+  {
+    "id": 49,
+    "category": "Healing",
+    "source": "Bible",
+    "quote": "\"He has sent me to bind up the brokenhearted, to proclaim freedom for the captives.\"",
+    "reference": "Isaiah 61:1",
+    "affirmation": "This is not a future promise. It is the purpose he came to fulfil - for you.",
+    "context": "Jesus read these very words in the synagogue at the start of his ministry and said: today this scripture is fulfilled. The healing ministry was not symbolic. It was physical, personal, immediate."
+  },
+  {
+    "id": 50,
+    "category": "Gratitude",
+    "source": "Bible",
+    "quote": "\"Enter his gates with thanksgiving and his courts with praise.\"",
+    "reference": "Psalm 100:4",
+    "affirmation": "Gratitude is the language of approach. You do not need perfect words. Just thankfulness.",
+    "context": "Psalm 100 is one of the most joyful psalms in the entire collection. It was written as a communal song of entry - the gates of thanksgiving are an open door, not a toll."
+  },
+  {
+    "id": 51,
+    "category": "Anxiety",
+    "source": "Scripture of Mormon",
+    "quote": "\"Look unto me in every thought; doubt not, fear not.\"",
+    "reference": "Doctrine & Covenants 6:36",
+    "affirmation": "Every thought. Not just the clean ones. Every thought can be turned toward him.",
+    "context": "This personal revelation was given to Oliver Cowdery early in his spiritual journey, when he was full of uncertainty. The invitation was not to resolve the doubt first. It was to look toward God in the middle of it."
+  },
+  {
+    "id": 52,
+    "category": "Peace",
+    "source": "Scripture of Mormon",
+    "quote": "\"And if men come unto me I will show unto them their weakness. I give unto men weakness that they may be humble; and my grace is sufficient for all men that humble themselves before me.\"",
+    "reference": "Ether 12:27 - Book of Mormon",
+    "affirmation": "Your weakness was not a mistake in your design. It was a doorway.",
+    "context": "Moroni received this when he was afraid his weakness in writing would cause people to disbelieve. God's response reframed the weakness entirely - it was not a flaw to be fixed. It was a grace to be received."
+  },
+  {
+    "id": 53,
+    "category": "Loneliness",
+    "source": "Bible",
+    "quote": "\"Where can I go from your Spirit? Where can I flee from your presence? If I go up to the heavens, you are there.\"",
+    "reference": "Psalm 139:7-8",
+    "affirmation": "You are still found. Even in the silence, you have not been left.",
+    "context": "Psalm 139 is one of the most intimate in all of Scripture. The 'fleeing' described is not rebellion - it reads more like someone testing whether the love is truly unconditional. It is."
+  },
+  {
+    "id": 54,
+    "category": "Strength",
+    "source": "Bible",
+    "quote": "\"Those who hope in the Lord will renew their strength. They will soar on wings like eagles.\"",
+    "reference": "Isaiah 40:31",
+    "affirmation": "The renewal comes to those who wait - not those who perform.",
+    "context": "The word 'wait' here carries the sense of expectant hope, not passive resignation. It is the posture of someone who believes something is coming."
+  },
+  {
+    "id": 55,
+    "category": "Identity",
+    "source": "Bible",
+    "quote": "\"See what great love the Father has lavished on us, that we should be called children of God! And that is what we are!\"",
+    "reference": "1 John 3:1",
+    "affirmation": "Not employees, not subjects - children. That is your position.",
+    "context": "John seems almost astonished as he writes this - 'and that is what we are!' The identity is settled, lavished, certain. It is not conditional on behavior or performance."
+  },
+  {
+    "id": 56,
+    "category": "Hope",
+    "source": "D&C",
+    "quote": "\"For God so loved the world, that he gave his Only Begotten Son, that whosoever believeth in him should not perish, but have everlasting life.\"",
+    "reference": "John 3:16 - also cited in D&C 20:21",
+    "affirmation": "This love is not theoretical. It is historical, personal, and still reaching for you today.",
+    "context": "Cited in both the Bible and Doctrine & Covenants, this verse is the most quoted in all of Christianity. It has not lost its weight. Every repetition is for someone who needed to hear it again."
+  },
+  {
+    "id": 57,
+    "category": "Grief",
+    "source": "Bible",
+    "quote": "\"The Lord is near to all who call on him, to all who call on him in truth.\"",
+    "reference": "Psalm 145:18",
+    "affirmation": "In truth - meaning honestly, without pretending. He is near to that kind of calling.",
+    "context": "'In truth' is one of the most liberating qualifiers in Scripture. You do not have to call with perfect faith or polished words. You need only call honestly."
+  },
+  {
+    "id": 58,
+    "category": "Guidance",
+    "source": "Bible",
+    "quote": "\"Call to me and I will answer you and tell you great and unsearchable things you do not know.\"",
+    "reference": "Jeremiah 33:3",
+    "affirmation": "There are things you do not yet know that God is ready to show you. Begin by asking.",
+    "context": "Jeremiah received this while confined in a courtyard during a siege. The invitation to call out came in the middle of captivity, not after it."
+  },
+  {
+    "id": 59,
+    "category": "Healing",
+    "source": "Scripture of Mormon",
+    "quote": "\"And he shall go forth, suffering pains and afflictions and temptations of every kind; and this that the word might be fulfilled which saith he will take upon him the pains and the sicknesses of his people.\"",
+    "reference": "Alma 7:11 - Book of Mormon",
+    "affirmation": "He took on your specific pain. Not pain in general - yours.",
+    "context": "Alma's account of the atonement includes not just sin but suffering - pains, sicknesses, infirmities. The atonement is not only about guilt. It reaches into every form of human hurt."
+  },
+  {
+    "id": 60,
+    "category": "Courage",
+    "source": "Bible",
+    "quote": "\"For God gave us a spirit not of fear but of power and love and self-control.\"",
+    "reference": "2 Timothy 1:7",
+    "affirmation": "Fear is not your inheritance. Power, love, and a sound mind - these are what you have been given.",
+    "context": "Paul wrote this to Timothy, who was young and apparently fearful about the responsibility he carried. The reminder was not to try harder but to remember what had already been given."
+  }
+]

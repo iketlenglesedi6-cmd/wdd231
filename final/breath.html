@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A guided breathing space rooted in scripture. Slow down, breathe, and be still in the presence of God.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>Breath and Be Still - Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/breath.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/breath.js" defer></script>
+</head>
+<body>
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="34" height="34">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home">Home</a></li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group active">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html" class="active"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <header class="ph">
+      <div class="pl">Breath &amp; Be Still</div>
+      <h1>Slow down.<br><em>He is already here.</em></h1>
+      <p>You do not need to calm yourself before coming to God.<br>Let this breath be the prayer.</p>
+    </header>
+
+    <section class="pattern-selector">
+      <button class="pat-btn on" data-key="box" type="button">Box - 4·4·4·4</button>
+      <button class="pat-btn" data-key="calm" type="button">Calm - 4·7·8</button>
+      <button class="pat-btn" data-key="gentle" type="button">Gentle - 5·2·5</button>
+      <button class="pat-btn" data-key="rest" type="button">Rest - 6·0·6</button>
+    </section>
+
+    <section class="stage" id="stage">
+      <div class="stage-ring"></div>
+      <div class="stage-ring-2"></div>
+      <div class="glow-ring gr3" id="gr3"></div>
+      <div class="glow-ring gr2" id="gr2"></div>
+      <div class="glow-ring gr1" id="gr1"></div>
+      <div class="breath-circle" id="breathCircle">
+        <div class="phase-word" id="phaseWord">Begin</div>
+      </div>
+      <div class="phase-count" id="phaseCount"></div>
+    </section>
+
+    <button class="start-btn" id="startBtn" type="button">
+      <span id="startBtnText">Begin breathing</span>
+    </button>
+
+    <section class="verse-area">
+      <div class="verse-divider">
+        <div class="vd-line"></div>
+        <div class="vd-dot"></div>
+        <div class="vd-line"></div>
+      </div>
+      <div class="verse-card" id="verseCard">
+        <blockquote id="verseQ">"Be still, and know that I am God."</blockquote>
+        <cite id="verseRef">Psalm 46:10</cite>
+      </div>
+      <p class="verse-note" id="verseNote">Hold this verse gently as you breathe. You do not have to do anything with it.</p>
+    </section>
+
+    <section class="session-row">
+      <div class="session-stat">
+        <div class="stat-num" id="cycleCount">0</div>
+        <div class="stat-lbl">Cycles today</div>
+      </div>
+      <div class="session-stat">
+        <div class="stat-num" id="sessionMin">0</div>
+        <div class="stat-lbl">Minutes of stillness</div>
+      </div>
+      <div class="session-stat">
+        <div class="stat-num" id="totalSessions">0</div>
+        <div class="stat-lbl">Total sessions</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="complete-banner" id="completeBanner">
+    <p id="completeBannerText">Well done. Take one more breath and carry this stillness with you.</p>
+  </div>
+
+  <div class="strip">
+    <blockquote>"Therefore, dearly beloved brethren, let us cheerfully do all things that lie in our power; and then may we stand still, with the utmost assurance, to see the salvation of God."</blockquote>
+    <cite>Doctrine &amp; Covenants 123:17</cite>
+  </div>
+
+  <footer>
+    <span class="fb">Come As You Are</span>
+    <ul class="fn">
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="quiet-space.html">Quiet Space</a></li>
+      <li><a href="encouragement.html">Encouragement</a></li>
+      <li><a href="candle-room.html">Candle Room</a></li>
+      <li><a href="breath.html">Breath</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <p class="fc">&copy; 2026 Lesedi Pride Iketleng &middot; WDD 231 &middot; calm, honest, reflective, and welcoming</p>
+    <div class="footer-utility">
+      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+</body>
+</html>

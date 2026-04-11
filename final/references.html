@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="References and acknowledgements for Come As You Are.">
+  <title>References - Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <link rel="stylesheet" href="styles/references.css">
+  <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="36" height="36">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home">Home</a></li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="lbl">References</div>
+    <h1>The sources<br><em>behind this place.</em></h1>
+    <p class="intro">This page gathers the design, technical, and testing references that informed the more complex parts of <em>Come As You Are</em>, including layout, gradients, responsive typography, modal work, local data handling, and the final testing process.</p>
+
+    <section class="refs-section">
+      <div class="ref-label">Course Material</div>
+      <h2>WDD 231 project and course references</h2>
+      <ul class="ref-list">
+        <li>BYU-Pathway Worldwide, WDD 231 weekly modules and project requirements.</li>
+        <li>WDD 231 course rubric, final project submission directions, and video specifications provided in Canvas.</li>
+        <li>Instructor guidance and course examples used as reference for responsive layout, menu behavior, dynamic data, form processing, local storage, and video expectations.</li>
+        <li class="ref-note">Some course resources are inside the class LMS and are not publicly linkable, so they are cited here as course materials rather than public URLs.</li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">Typography and Visual Direction</div>
+      <h2>Fonts, color, gradients, and surface effects</h2>
+      <ul class="ref-list">
+        <li><a href="https://fonts.google.com/specimen/Cormorant+Garamond" target="_blank" rel="noopener noreferrer">Google Fonts: Cormorant Garamond</a></li>
+        <li><a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer">Google Fonts: Manrope</a></li>
+        <li><a href="https://fonts.google.com/specimen/Parisienne" target="_blank" rel="noopener noreferrer">Google Fonts: Parisienne</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Images/Using_gradients" target="_blank" rel="noopener noreferrer">MDN: Using CSS gradients</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient" target="_blank" rel="noopener noreferrer">MDN: linear-gradient()</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient" target="_blank" rel="noopener noreferrer">MDN: radial-gradient()</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" target="_blank" rel="noopener noreferrer">MDN: clamp()</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter" target="_blank" rel="noopener noreferrer">MDN: backdrop-filter</a></li>
+        <li><a href="https://web.dev/learn/design/accessibility" target="_blank" rel="noopener noreferrer">web.dev: Accessibility and readable design choices</a></li>
+        <li><a href="https://www.smashingmagazine.com/2024/01/css-blurry-shimmer-effect/" target="_blank" rel="noopener noreferrer">Smashing Magazine: CSS blur and atmospheric surface inspiration</a></li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">Layout and Responsive Structure</div>
+      <h2>Flexbox, Grid, and viewport-based scaling</h2>
+      <ul class="ref-list">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout" target="_blank" rel="noopener noreferrer">MDN: CSS flexible box layout</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout" target="_blank" rel="noopener noreferrer">MDN: CSS grid layout</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Basic_concepts" target="_blank" rel="noopener noreferrer">MDN: Basic concepts of grid layout</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" target="_blank" rel="noopener noreferrer">MDN: clamp() for fluid typography and spacing</a></li>
+        <li><a href="https://web.dev/learn/css/flexbox" target="_blank" rel="noopener noreferrer">web.dev: Learn CSS Flexbox</a></li>
+        <li><a href="https://web.dev/learn/css/grid/" target="_blank" rel="noopener noreferrer">web.dev: Learn CSS Grid</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">CSS-Tricks: A Complete Guide to Flexbox</a></li>
+        <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener noreferrer">CSS-Tricks: A Complete Guide to Grid</a></li>
+        <li><a href="https://web.dev/patterns/layout/" target="_blank" rel="noopener noreferrer">web.dev: Layout patterns</a></li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">JavaScript and Data</div>
+      <h2>Local JSON, asynchronous loading, storage, and modules</h2>
+      <ul class="ref-list">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" rel="noopener noreferrer">MDN: Fetch API</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">MDN: Window.localStorage</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams" target="_blank" rel="noopener noreferrer">MDN: URLSearchParams</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/append" target="_blank" rel="noopener noreferrer">MDN: URLSearchParams.append()</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/toString" target="_blank" rel="noopener noreferrer">MDN: URLSearchParams.toString()</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank" rel="noopener noreferrer">MDN: JavaScript modules</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API" target="_blank" rel="noopener noreferrer">MDN: Intersection Observer API</a></li>
+        <li><a href="https://web.dev/learn/javascript/data-types" target="_blank" rel="noopener noreferrer">web.dev: Learn JavaScript fundamentals</a></li>
+        <li><a href="https://javascript.info/fetch" target="_blank" rel="noopener noreferrer">javascript.info: Fetch</a></li>
+        <li><a href="https://javascript.info/localstorage" target="_blank" rel="noopener noreferrer">javascript.info: LocalStorage, sessionStorage</a></li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">Accessibility and Interaction</div>
+      <h2>Modal patterns and dialog guidance</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/" target="_blank" rel="noopener noreferrer">W3C WAI-ARIA APG: Dialog (Modal) Pattern</a></li>
+        <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/" target="_blank" rel="noopener noreferrer">W3C WAI-ARIA APG: Modal Dialog Example</a></li>
+        <li><a href="https://web.dev/learn/html/dialog" target="_blank" rel="noopener noreferrer">web.dev: Learn HTML dialog</a></li>
+        <li><a href="https://web.dev/articles/building/a-dialog-component" target="_blank" rel="noopener noreferrer">web.dev article: Building a dialog component</a></li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">Testing and Quality Checks</div>
+      <h2>Audit and review tools</h2>
+      <ul class="ref-list">
+        <li><a href="https://developer.chrome.com/docs/devtools/lighthouse" target="_blank" rel="noopener noreferrer">Chrome for Developers: Lighthouse</a></li>
+        <li><a href="https://developer.chrome.com/docs/devtools/css-overview" target="_blank" rel="noopener noreferrer">Chrome for Developers: CSS Overview</a></li>
+        <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validation Service</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">W3C CSS Validation Service</a></li>
+        <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener noreferrer">WebAIM WAVE accessibility checker</a></li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">Scripture and Content Context</div>
+      <h2>Scripture sources and course context</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">The Church of Jesus Christ of Latter-day Saints: Scripture Library</a></li>
+        <li><a href="https://www.biblegateway.com/" target="_blank" rel="noopener noreferrer">BibleGateway</a></li>
+        <li>Original writing, layout, project implementation, and scripture selections adapted for this educational project by Lesedi Pride Iketleng unless otherwise noted.</li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">Video Learning References</div>
+      <h2>Tutorial videos consulted while building and polishing the project</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.youtube.com/watch?v=fYq5PXgSsbE&t=0s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn Flexbox in 15 Minutes</a> <span class="time-note">Timestamp: 0:00</span></li>
+        <li><a href="https://www.youtube.com/watch?v=9zBsdzdE4sM&t=0s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn CSS Grid in 20 Minutes</a> <span class="time-note">Timestamp: 0:00</span></li>
+        <li><a href="https://www.youtube.com/watch?v=cuEtnrL9-H0&t=0s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn Fetch API in 6 Minutes</a> <span class="time-note">Timestamp: 0:00</span></li>
+        <li><a href="https://www.youtube.com/watch?v=PCwhTWT3yhI&t=0s" target="_blank" rel="noopener noreferrer">Piyush Garg: Local Storage in JavaScript</a> <span class="time-note">Timestamp: 0:00</span></li>
+        <li><a href="https://www.youtube.com/watch?v=-D5YGTkTBH4&t=0s" target="_blank" rel="noopener noreferrer">dcode: URLSearchParams in JavaScript - Constructing Query Strings</a> <span class="time-note">Timestamp: 0:00</span></li>
+      </ul>
+      <p class="ref-note">Timestamp links are included so the grader can see the exact starting point of each referenced video resource.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="fb">Come As You Are</span>
+    <ul class="fn">
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="quiet-space.html">Quiet Space</a></li>
+      <li><a href="encouragement.html">Encouragement</a></li>
+      <li><a href="scripture-vault.html">Scripture Vault</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="footer-utility">
+      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="references.html" aria-current="page">References</a>
+    </div>
+    <p class="fc">&copy; 2026 Lesedi Pride Iketleng &middot; WDD 231 &middot; calm, honest, reflective, and welcoming</p>
+  </footer>
+</body>
+</html>
