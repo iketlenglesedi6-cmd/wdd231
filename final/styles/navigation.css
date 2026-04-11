@@ -12,6 +12,93 @@
   --nav-panel-copy: #9b7d61;
 }
 
+.skip-link {
+  position: fixed;
+  top: -48px;
+  left: 14px;
+  z-index: 1200;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #554233;
+  color: #fffaf3;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.music-player {
+  display: none;
+}
+
+.music-toggle {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 1200;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid rgba(85, 66, 51, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 250, 243, 0.4);
+  color: #554233;
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(85, 66, 51, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.music-toggle .music-flower {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  border: 1px solid rgba(85, 66, 51, 0.18);
+  background:
+    radial-gradient(circle at 50% 50%, #feda86 0 22%, transparent 23% 100%),
+    radial-gradient(circle at 50% 16%, rgba(218, 163, 143, 0.7) 0 28%, transparent 29% 100%),
+    radial-gradient(circle at 82% 33%, rgba(218, 163, 143, 0.68) 0 28%, transparent 29% 100%),
+    radial-gradient(circle at 82% 67%, rgba(218, 163, 143, 0.66) 0 28%, transparent 29% 100%),
+    radial-gradient(circle at 50% 84%, rgba(218, 163, 143, 0.7) 0 28%, transparent 29% 100%),
+    radial-gradient(circle at 18% 67%, rgba(218, 163, 143, 0.66) 0 28%, transparent 29% 100%),
+    radial-gradient(circle at 18% 33%, rgba(218, 163, 143, 0.68) 0 28%, transparent 29% 100%);
+}
+
+.music-toggle .music-text {
+  white-space: nowrap;
+}
+
+.music-toggle.on,
+.music-toggle[aria-pressed="true"] {
+  border-color: rgba(218, 163, 143, 0.6);
+  background: rgba(233, 215, 192, 0.5);
+}
+
+.music-toggle.on .music-flower,
+.music-toggle[aria-pressed="true"] .music-flower {
+  border-color: rgba(218, 163, 143, 0.5);
+  box-shadow: 0 0 0 3px rgba(254, 218, 134, 0.2);
+}
+
+.music-toggle:focus-visible {
+  outline: 2px solid #daa38f;
+  outline-offset: 2px;
+}
+
 .sanctuary-nav {
   gap: 24px;
 }
@@ -80,6 +167,8 @@
 .sanctuary-nav .nav-link-home:hover,
 .sanctuary-nav .nav-link-about:hover,
 .sanctuary-nav .nav-group-trigger:hover,
+.sanctuary-nav .nav-link-home[aria-current="page"],
+.sanctuary-nav .nav-link-about[aria-current="page"],
 .sanctuary-nav .nav-link-home.active,
 .sanctuary-nav .nav-link-about.active,
 .sanctuary-nav .nav-group.active > .nav-group-trigger {
@@ -89,6 +178,8 @@
 .sanctuary-nav .nav-link-home:hover::after,
 .sanctuary-nav .nav-link-about:hover::after,
 .sanctuary-nav .nav-group-trigger:hover::after,
+.sanctuary-nav .nav-link-home[aria-current="page"]::after,
+.sanctuary-nav .nav-link-about[aria-current="page"]::after,
 .sanctuary-nav .nav-link-home.active::after,
 .sanctuary-nav .nav-link-about.active::after,
 .sanctuary-nav .nav-group.active > .nav-group-trigger::after {
@@ -189,6 +280,7 @@
 }
 
 .sanctuary-nav .nav-panel-links a:hover,
+.sanctuary-nav .nav-panel-links a[aria-current="page"],
 .sanctuary-nav .nav-panel-links a.active {
   background: var(--nav-panel-soft-active);
   transform: translateY(-1px);
@@ -318,5 +410,95 @@
 
   .footer-utility {
     gap: 12px;
+  }
+
+  .music-toggle {
+    right: 10px;
+    bottom: 10px;
+    min-height: 40px;
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .sanctuary-nav .nav-logo-text,
+  .sanctuary-nav .nt {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-utility a {
+    letter-spacing: 0.1em;
+    font-size: 9px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .music-toggle {
+    max-width: calc(100vw - 16px);
+    right: 8px;
+    bottom: 8px;
+    padding: 7px 9px;
+    gap: 6px;
+  }
+
+  .music-toggle .music-text {
+    font-size: 9px;
+    letter-spacing: 0.04em;
+  }
+
+  .music-toggle .music-flower {
+    width: 20px;
+    height: 20px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  img,
+  svg,
+  video,
+  canvas,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bp,
+  .bs,
+  .btn-primary,
+  .btn-secondary,
+  .light-btn,
+  .start-btn,
+  .pat-btn,
+  .tbtn {
+    max-width: 100%;
+    white-space: normal;
+    letter-spacing: 0.1em;
+  }
+
+  .footer-utility,
+  .fn,
+  .fn2,
+  .footer-nav,
+  .footer-links {
+    max-width: 100%;
+  }
+
+  .fc,
+  .footer-copy,
+  .footer-utility a,
+  .fn a,
+  .fn2 a,
+  .footer-nav a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }

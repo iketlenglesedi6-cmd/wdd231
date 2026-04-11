@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/favicon-tree.svg">
   <meta name="description" content="References and acknowledgements for Come As You Are.">
   <title>References - Come As You Are</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -129,6 +131,21 @@
     </section>
 
     <section class="refs-section">
+      <div class="ref-label">Feature-by-Feature Build References</div>
+      <h2>Technical references mapped to the major project features</h2>
+      <ul class="ref-list">
+        <li>Dynamic card rendering and templates: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="noopener noreferrer">MDN: Array.prototype.map()</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="noopener noreferrer">MDN: Template literals</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML" target="_blank" rel="noopener noreferrer">MDN: Element.innerHTML</a>.</li>
+        <li>Filtering and searching data sets: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="noopener noreferrer">MDN: Array.prototype.filter()</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes" target="_blank" rel="noopener noreferrer">MDN: String.prototype.includes()</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase" target="_blank" rel="noopener noreferrer">MDN: String.prototype.toLowerCase()</a>.</li>
+        <li>Sorting and comparison logic: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank" rel="noopener noreferrer">MDN: Array.prototype.sort()</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare" target="_blank" rel="noopener noreferrer">MDN: String.prototype.localeCompare()</a>.</li>
+        <li>Form processing and action-page query strings: <a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData" target="_blank" rel="noopener noreferrer">MDN: FormData</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams" target="_blank" rel="noopener noreferrer">MDN: URLSearchParams</a>.</li>
+        <li>Dialog and modal behavior: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank" rel="noopener noreferrer">MDN: dialog element</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal" target="_blank" rel="noopener noreferrer">MDN: showModal()</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event" target="_blank" rel="noopener noreferrer">MDN: keydown event</a>.</li>
+        <li>Clipboard utility in modal actions: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText" target="_blank" rel="noopener noreferrer">MDN: Clipboard.writeText()</a>.</li>
+        <li>Navigation responsiveness and wayfinding behavior: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media" target="_blank" rel="noopener noreferrer">MDN: @media</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia" target="_blank" rel="noopener noreferrer">MDN: matchMedia()</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current" target="_blank" rel="noopener noreferrer">MDN: aria-current</a>.</li>
+        <li>Persistent UI state and music preference storage: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank" rel="noopener noreferrer">MDN: localStorage</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/currentTime" target="_blank" rel="noopener noreferrer">MDN: HTMLMediaElement.currentTime</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/pagehide_event" target="_blank" rel="noopener noreferrer">MDN: pagehide event</a>.</li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
       <div class="ref-label">Accessibility and Interaction</div>
       <h2>Modal patterns and dialog guidance</h2>
       <ul class="ref-list">
@@ -136,6 +153,8 @@
         <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/" target="_blank" rel="noopener noreferrer">W3C WAI-ARIA APG: Modal Dialog Example</a></li>
         <li><a href="https://web.dev/learn/html/dialog" target="_blank" rel="noopener noreferrer">web.dev: Learn HTML dialog</a></li>
         <li><a href="https://web.dev/articles/building/a-dialog-component" target="_blank" rel="noopener noreferrer">web.dev article: Building a dialog component</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a#skip_links" target="_blank" rel="noopener noreferrer">MDN: Skip links and keyboard navigation</a></li>
+        <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank" rel="noopener noreferrer">W3C WCAG: Contrast (Minimum)</a></li>
       </ul>
     </section>
 
@@ -148,6 +167,17 @@
         <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validation Service</a></li>
         <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">W3C CSS Validation Service</a></li>
         <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener noreferrer">WebAIM WAVE accessibility checker</a></li>
+        <li><a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">PageSpeed Insights (Lighthouse-powered)</a></li>
+      </ul>
+    </section>
+
+    <section class="refs-section">
+      <div class="ref-label">Media and Icons</div>
+      <h2>Audio, favicon, and metadata implementation references</h2>
+      <ul class="ref-list">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">MDN: audio element</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play" target="_blank" rel="noopener noreferrer">MDN: HTMLMediaElement.play()</a>.</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Favicon" target="_blank" rel="noopener noreferrer">MDN: Favicon glossary and best practices</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#attr-rel" target="_blank" rel="noopener noreferrer">MDN: link rel values</a>.</li>
+        <li><a href="https://ogp.me/" target="_blank" rel="noopener noreferrer">Open Graph protocol reference (social sharing metadata)</a>.</li>
       </ul>
     </section>
 
@@ -165,13 +195,16 @@
       <div class="ref-label">Video Learning References</div>
       <h2>Tutorial videos consulted while building and polishing the project</h2>
       <ul class="ref-list">
-        <li><a href="https://www.youtube.com/watch?v=fYq5PXgSsbE&t=0s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn Flexbox in 15 Minutes</a> <span class="time-note">Timestamp: 0:00</span></li>
-        <li><a href="https://www.youtube.com/watch?v=9zBsdzdE4sM&t=0s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn CSS Grid in 20 Minutes</a> <span class="time-note">Timestamp: 0:00</span></li>
-        <li><a href="https://www.youtube.com/watch?v=cuEtnrL9-H0&t=0s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn Fetch API in 6 Minutes</a> <span class="time-note">Timestamp: 0:00</span></li>
-        <li><a href="https://www.youtube.com/watch?v=PCwhTWT3yhI&t=0s" target="_blank" rel="noopener noreferrer">Piyush Garg: Local Storage in JavaScript</a> <span class="time-note">Timestamp: 0:00</span></li>
-        <li><a href="https://www.youtube.com/watch?v=-D5YGTkTBH4&t=0s" target="_blank" rel="noopener noreferrer">dcode: URLSearchParams in JavaScript - Constructing Query Strings</a> <span class="time-note">Timestamp: 0:00</span></li>
+        <li><a href="https://www.youtube.com/watch?v=fYq5PXgSsbE&t=186s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn Flexbox in 15 Minutes</a> <span class="time-note">Timestamp: 3:06</span></li>
+        <li><a href="https://www.youtube.com/watch?v=9zBsdzdE4sM&t=332s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn CSS Grid in 20 Minutes</a> <span class="time-note">Timestamp: 5:32</span></li>
+        <li><a href="https://www.youtube.com/watch?v=cuEtnrL9-H0&t=102s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Learn Fetch API in 6 Minutes</a> <span class="time-note">Timestamp: 1:42</span></li>
+        <li><a href="https://www.youtube.com/watch?v=PCwhTWT3yhI&t=117s" target="_blank" rel="noopener noreferrer">Piyush Garg: Local Storage in JavaScript</a> <span class="time-note">Timestamp: 1:57</span></li>
+        <li><a href="https://www.youtube.com/watch?v=-D5YGTkTBH4&t=134s" target="_blank" rel="noopener noreferrer">dcode: URLSearchParams in JavaScript - Constructing Query Strings</a> <span class="time-note">Timestamp: 2:14</span></li>
+        <li><a href="https://www.youtube.com/watch?v=TAB_v6yBXIE&t=325s" target="_blank" rel="noopener noreferrer">Traversy Media: JavaScript Crash Course for Beginners</a> <span class="time-note">Timestamp: 5:25</span></li>
+        <li><a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=2220s" target="_blank" rel="noopener noreferrer">SuperSimpleDev: HTML &amp; CSS Full Course</a> <span class="time-note">Timestamp: 37:00</span></li>
+        <li><a href="https://www.youtube.com/watch?v=3PHXvlpOkf4&t=124s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: JavaScript Promises In 10 Minutes</a> <span class="time-note">Timestamp: 2:04</span></li>
+        <li><a href="https://www.youtube.com/watch?v=lfmg-EJ8gm4&t=255s" target="_blank" rel="noopener noreferrer">Web Dev Simplified: Async Await JavaScript Tutorial</a> <span class="time-note">Timestamp: 4:15</span></li>
       </ul>
-      <p class="ref-note">Timestamp links are included so the grader can see the exact starting point of each referenced video resource.</p>
     </section>
   </main>
 
@@ -185,10 +218,12 @@
       <li><a href="about.html">About</a></li>
     </ul>
     <div class="footer-utility">
-      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="https://youtu.be/dhT7nqGKbbw" target="_blank" rel="noopener noreferrer" title="Open project video walkthrough">Video Walkthrough</a>
       <a href="references.html" aria-current="page">References</a>
     </div>
     <p class="fc">&copy; 2026 Lesedi Pride Iketleng &middot; WDD 231 &middot; calm, honest, reflective, and welcoming</p>
   </footer>
 </body>
 </html>
+
+

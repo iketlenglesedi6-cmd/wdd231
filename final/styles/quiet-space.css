@@ -93,3 +93,28 @@ footer { position: relative; z-index: 1; padding: 48px 48px 36px; display: flex;
   .fn2 { flex-wrap: wrap; justify-content: center; gap: 14px; }
   .jta { min-height: 280px; padding: 24px; font-size: 17px; }
 }
+
+@media (max-width: 420px) {
+  .left {
+    padding: 112px 20px 40px;
+  }
+
+  .right {
+    padding: 40px 20px 72px;
+  }
+
+  .wal {
+    flex-wrap: wrap;
+  }
+
+  .bp,
+  .bs {
+    max-width: 100%;
+    letter-spacing: 0.12em;
+  }
+
+  .fc {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}

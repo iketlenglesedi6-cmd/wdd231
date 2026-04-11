@@ -208,12 +208,16 @@ h1 em {
   font-size: 15px;
   line-height: 1.85;
   color: var(--ink);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .ref-list a {
   color: var(--ink);
   text-decoration: none;
   border-bottom: 1px solid rgba(155, 125, 97, 0.35);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .ref-list a:hover {
@@ -311,5 +315,25 @@ footer {
 
   .fn {
     gap: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page {
+    padding: 116px 18px 72px;
+  }
+
+  h1 {
+    line-height: 1.12;
+  }
+
+  .intro {
+    font-size: 19px;
+  }
+
+  .ref-list li,
+  .ref-note {
+    font-size: 14px;
+    line-height: 1.75;
   }
 }

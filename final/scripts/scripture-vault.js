@@ -145,13 +145,19 @@ function openModal(verseId) {
   modalAffirmation.textContent = verse.affirmation;
   modalContext.textContent = verse.context;
   copyBtnText.textContent = "Copy verse";
-  modalOverlay.classList.add("open");
-  document.body.style.overflow = "hidden";
+  if (typeof modalOverlay.showModal === "function") {
+    modalOverlay.showModal();
+  } else {
+    modalOverlay.classList.add("open");
+  }
 }
 
 function closeModal() {
-  modalOverlay.classList.remove("open");
-  document.body.style.overflow = "";
+  if (typeof modalOverlay.close === "function") {
+    modalOverlay.close();
+  } else {
+    modalOverlay.classList.remove("open");
+  }
   state.activeVerse = null;
 }
 
@@ -232,7 +238,7 @@ if (copyVerseButton) {
 }
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && modalOverlay.classList.contains("open")) {
+  if (event.key === "Escape" && (modalOverlay.open || modalOverlay.classList.contains("open"))) {
     closeModal();
   }
 });
