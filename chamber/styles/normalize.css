@@ -1,4 +1,4 @@
-﻿/* Minimal reset/normalize */
+/* Minimal reset/normalize */
 *, *::before, *::after {
   box-sizing: border-box;
 }

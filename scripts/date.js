@@ -1,4 +1,4 @@
-﻿const yearSpan = document.querySelector("#currentyear");
+const yearSpan = document.querySelector("#currentyear");
 const modifiedParagraph = document.querySelector("#lastModified");
 
 if (yearSpan) {

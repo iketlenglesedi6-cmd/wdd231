@@ -1,4 +1,4 @@
-﻿const membersContainer = document.querySelector('#member-list');
+const membersContainer = document.querySelector('#member-list');
 const gridButton = document.querySelector('#grid-view');
 const listButton = document.querySelector('#list-view');
 const filterContainer = document.querySelector('#category-filters');

@@ -1,4 +1,4 @@
-﻿const courses = [
+const courses = [
   { code: "CSE 110", name: "Programming Building Blocks", credits: 2, subject: "CSE", completed: true },
   { code: "CSE 111", name: "Programming with Functions", credits: 2, subject: "CSE", completed: true },
   { code: "CSE 210", name: "Programming with Classes", credits: 2, subject: "CSE", completed: false },

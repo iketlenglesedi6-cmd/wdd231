@@ -1,4 +1,4 @@
-ï»¿const weatherTemp = document.querySelector('#current-temp');
+const weatherTemp = document.querySelector('#current-temp');
 const weatherDesc = document.querySelector('#weather-desc');
 const forecastList = document.querySelector('#forecast-list');
 const spotlightList = document.querySelector('#spotlight-list');
@@ -48,7 +48,7 @@ async function loadWeather() {
       weatherIcon.alt = currentData.weather[0].description;
     }
     if (weatherFeels) {
-      weatherFeels.textContent = `${Math.round(currentData.main.feels_like)}Â°C`;
+      weatherFeels.textContent = `${Math.round(currentData.main.feels_like)}°C`;
     }
     if (weatherHumidity) {
       weatherHumidity.textContent = `${currentData.main.humidity}%`;
@@ -80,7 +80,7 @@ async function loadWeather() {
         icon.loading = 'lazy';
 
         const text = document.createElement('span');
-        text.textContent = `${day}: ${Math.round(entry.main.temp)}Â°C`;
+        text.textContent = `${day}: ${Math.round(entry.main.temp)}°C`;
 
         item.append(icon, text);
         forecastList.append(item);

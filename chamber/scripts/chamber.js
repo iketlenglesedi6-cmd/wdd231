@@ -1,4 +1,4 @@
-ï»¿const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.querySelector('.menu-toggle');
 const primaryNav = document.querySelector('.primary-nav');
 
 if (menuToggle && primaryNav) {
@@ -36,7 +36,7 @@ if (gallerySlide && galleryCaption) {
     {
       src: 'images/gallery/braam-cafe-interior.jpg',
       alt: 'Coffee bar interior with chalkboard menus and Edison bulbs',
-      caption: 'CafÃ© conversations and warm light'
+      caption: 'Café conversations and warm light'
     },
     {
       src: 'images/gallery/braam-street-mural.jpg',
@@ -66,7 +66,7 @@ if (gallerySlide && galleryCaption) {
     {
       src: 'images/gallery/braam-story-mural.jpg',
       alt: 'Tall building mural of two people dining in a painted scene',
-      caption: 'Story mural on a city faÃ§ade'
+      caption: 'Story mural on a city façade'
     },
     {
       src: 'images/gallery/braam-community-mural-market.jpg',
