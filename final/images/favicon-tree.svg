@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Come As You Are favicon</title>
+  <desc id="desc">Simplified tree of life favicon for Come As You Are.</desc>
+  <circle cx="32" cy="32" r="30" fill="#fff9f2"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#9b7d61" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="32" cy="28" r="13" fill="#feda86" opacity="0.28"/>
+  <path d="M32 21v20" stroke="#9b7d61" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M32 28c-4-4-9-6-14-4" fill="none" stroke="#9b7d61" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M32 28c4-4 9-6 14-4" fill="none" stroke="#9b7d61" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M32 22c-2-5-4-8-7-10" fill="none" stroke="#9b7d61" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M32 22c2-5 4-8 7-10" fill="none" stroke="#9b7d61" stroke-width="1.8" stroke-linecap="round"/>
+  <ellipse cx="21" cy="23" rx="4" ry="2.2" fill="#92ada4" transform="rotate(-20 21 23)"/>
+  <ellipse cx="17" cy="28" rx="4" ry="2.1" fill="#92ada4" transform="rotate(8 17 28)"/>
+  <ellipse cx="26" cy="16" rx="4" ry="2.1" fill="#92ada4" transform="rotate(-32 26 16)"/>
+  <ellipse cx="43" cy="23" rx="4" ry="2.2" fill="#92ada4" transform="rotate(20 43 23)"/>
+  <ellipse cx="47" cy="28" rx="4" ry="2.1" fill="#92ada4" transform="rotate(-8 47 28)"/>
+  <ellipse cx="38" cy="16" rx="4" ry="2.1" fill="#92ada4" transform="rotate(32 38 16)"/>
+  <ellipse cx="32" cy="13.5" rx="4.6" ry="2.4" fill="#92ada4"/>
+  <circle cx="32" cy="10.5" r="2.8" fill="#feda86"/>
+  <path d="M32 41c-2 4-5 7-9 9" fill="none" stroke="#9b7d61" stroke-width="1.7" stroke-linecap="round" opacity="0.8"/>
+  <path d="M32 41c2 4 5 7 9 9" fill="none" stroke="#9b7d61" stroke-width="1.7" stroke-linecap="round" opacity="0.8"/>
+</svg>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflection - Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reflection.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/reflection.js" defer></script>
+</head>
+<body>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="36" height="36">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home">Home</a></li>
+      <li class="nav-group active">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html" class="active"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-label">Reflection</div>
+    <h1>What are you<br><em>carrying today?</em></h1>
+    <p>This is not an interrogation. It is an invitation.<br>Take your time. There are no wrong answers here.</p>
+  </header>
+
+  <section class="breath-card">
+    <p>Before we go further - take a breath.</p>
+    <span>You are already in the right place.</span>
+  </section>
+
+  <div class="progress">
+    <div class="progress-dot active" id="dot-0"></div>
+    <div class="progress-dot" id="dot-1"></div>
+    <div class="progress-dot" id="dot-2"></div>
+    <div class="progress-dot" id="dot-3"></div>
+  </div>
+
+  <main class="reflection-container">
+    <section class="step active" id="step-0">
+      <div class="step-question">
+        <div class="step-number">A moment of honesty</div>
+        <h2>What feels the <em>heaviest</em> right now?</h2>
+        <p>Choose what resonates, or what is closest to the truth.</p>
+      </div>
+      <div class="choices">
+        <button class="choice-btn" type="button" data-step="0" data-value="overwhelmed">I feel overwhelmed<small>Everything feels like too much at once</small></button>
+        <button class="choice-btn" type="button" data-step="0" data-value="distant">I feel distant from God<small>Prayer feels far away or hollow</small></button>
+        <button class="choice-btn" type="button" data-step="0" data-value="afraid">I feel afraid or anxious<small>Something ahead feels uncertain or heavy</small></button>
+        <button class="choice-btn" type="button" data-step="0" data-value="lost">I feel lost or without direction<small>I am not sure where I am or where to go</small></button>
+        <button class="choice-btn" type="button" data-step="0" data-value="grief">I am grieving or in pain<small>Something or someone has been lost</small></button>
+        <button class="choice-btn" type="button" data-step="0" data-value="numb">I feel nothing at all<small>Empty, flat, disconnected</small></button>
+      </div>
+      <div class="step-actions">
+        <button class="btn-primary" id="to-step-1" type="button"><span>Continue</span></button>
+      </div>
+    </section>
+
+    <section class="step" id="step-1">
+      <div class="step-question">
+        <div class="step-number">A little more</div>
+        <h2>How long have you been<br><em>feeling this way?</em></h2>
+        <p>There is no right answer. Just what is true.</p>
+      </div>
+      <div class="choices">
+        <button class="choice-btn" type="button" data-step="1" data-value="today">Just today<small>Something happened recently</small></button>
+        <button class="choice-btn" type="button" data-step="1" data-value="weeks">A few days or weeks<small>It has been building for a while</small></button>
+        <button class="choice-btn" type="button" data-step="1" data-value="months">A long time<small>This has been with me for months</small></button>
+        <button class="choice-btn" type="button" data-step="1" data-value="unsure">I am not sure<small>It feels like it has always been there</small></button>
+      </div>
+      <div class="step-actions">
+        <button class="btn-secondary" id="back-step-0" type="button">Back</button>
+        <button class="btn-primary" id="to-step-2" type="button"><span>Continue</span></button>
+      </div>
+    </section>
+
+    <section class="step" id="step-2">
+      <div class="step-question">
+        <div class="step-number">In your own words</div>
+        <h2>Is there anything you would<br>like to <em>say out loud?</em></h2>
+        <p>This is just for you. Write freely - nothing you say here is too much.</p>
+      </div>
+      <textarea class="reflection-textarea" id="userWords" placeholder="Say it how it comes. There is no wrong way to begin..."></textarea>
+      <div class="step-actions">
+        <button class="btn-secondary" id="back-step-1" type="button">Back</button>
+        <button class="btn-primary" id="to-step-3" type="button"><span>Receive a word</span></button>
+      </div>
+    </section>
+
+    <section class="step" id="step-3">
+      <div class="response-card">
+        <div class="response-greeting">A word for you</div>
+        <p class="response-word" id="responseWord"></p>
+        <div class="response-scripture" id="responseScripture"></div>
+        <p class="response-closing" id="responseClosing"></p>
+      </div>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      <div class="step-actions">
+        <button class="btn-secondary" id="restart" type="button">Begin again</button>
+        <a href="quiet-space.html" class="btn-primary"><span>Go to Quiet Space</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-brand">Come As You Are</span>
+    <ul class="footer-nav">
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="quiet-space.html">Quiet Space</a></li>
+      <li><a href="encouragement.html">Encouragement</a></li>
+      <li><a href="scripture-vault.html">Scripture Vault</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Lesedi Pride Iketleng · WDD 231 · calm, honest, reflective, and welcoming</p>
+    <div class="footer-utility">
+      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+</body>
+</html>

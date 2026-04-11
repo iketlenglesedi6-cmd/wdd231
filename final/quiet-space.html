@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiet Space - Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/quiet-space.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/quiet-space.js" defer></script>
+</head>
+<body>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="36" height="36">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home">Home</a></li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group active">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html" class="active"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrap">
+    <section class="left">
+      <div>
+        <div class="lbl">Quiet Space</div>
+        <h1>Say it<br><em>how it comes.</em></h1>
+        <p class="desc">No instructions on how to sound.<br>No expectation to be spiritual enough.<br>Just you, your words, and a God who listens.</p>
+        <div class="vc">
+          <blockquote>"Be still, and know that I am God."</blockquote>
+          <cite>Psalm 46:10 - God is here, even in silence.</cite>
+        </div>
+      </div>
+      <div class="ltree">
+        <img src="images/favicon-tree.svg" alt="Decorative tree icon" width="80" height="80">
+      </div>
+      <p class="hint">Your entries are saved in your browser - private, just for you.</p>
+    </section>
+
+    <section class="right">
+      <div class="rh">
+        <p>Whatever is on your heart - prayers, questions, frustrations, gratitude - this page holds it without judgement.</p>
+      </div>
+
+      <div class="waw">
+        <div class="tb">
+          <div class="tbl">
+            <button class="tbtn on" id="bi" type="button">Italic</button>
+            <button class="tbtn" id="bn" type="button">Plain</button>
+          </div>
+          <span class="cc" id="cc">0 words</span>
+        </div>
+        <div class="dl" id="dl"></div>
+        <textarea class="jta fi" id="jta" placeholder="Say it how it comes..."></textarea>
+      </div>
+
+      <div class="wa">
+        <div class="wal">
+          <button class="bp" id="save-entry" type="button"><span>Save entry</span></button>
+          <button class="bs" id="clear-entry" type="button">Clear</button>
+        </div>
+        <a href="encouragement.html" class="bs">Encouragement →</a>
+      </div>
+
+      <div class="ss">
+        <div class="slbl">Previous entries</div>
+        <div id="sl"></div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="fb">Come As You Are</span>
+      <ul class="fn2">
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="quiet-space.html">Quiet Space</a></li>
+        <li><a href="encouragement.html">Encouragement</a></li>
+        <li><a href="scripture-vault.html">Scripture Vault</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <p class="fc">© 2026 Lesedi Pride Iketleng · WDD 231 · calm, honest, reflective, and welcoming</p>
+      <div class="footer-utility">
+        <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+        <a href="references.html">References</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">Entry saved</div>
+</body>
+</html>

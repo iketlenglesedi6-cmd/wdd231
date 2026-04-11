@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Light a candle for what you are carrying. A quiet room where flames burn for every burden, prayer, and person held in faith.">
+  <meta name="author" content="Lesedi Pride Iketleng">
+  <title>Candle Room - Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/candle-room.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/candle-room.js" defer></script>
+</head>
+<body>
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="34" height="34">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home">Home</a></li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group active">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html" class="active"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="ph">
+    <div class="pl">The Candle Room</div>
+    <h1>You are not<br><em>alone in here.</em></h1>
+    <p>Every candle burning in this room was lit by someone carrying something.<br>Light yours. Stay a while.</p>
+  </header>
+
+  <section class="verse-whisper">
+    <blockquote id="roomVerse">"The Lord is my light and my salvation - whom shall I fear?"</blockquote>
+    <cite id="roomVerseRef">Psalm 27:1</cite>
+  </section>
+
+  <section class="light-form">
+    <div class="light-form-inner">
+      <p class="form-prompt">What are you lighting this candle for?</p>
+      <p class="form-sub">A name, a prayer, a burden, a hope. It does not need to be much.</p>
+      <textarea class="form-input" id="intentionInput" rows="2" maxlength="120" placeholder="e.g. peace for my family, courage for tomorrow, a friend who is hurting..."></textarea>
+      <div class="form-tags">
+        <button class="tag-btn" data-tag="Hope" type="button">Hope</button>
+        <button class="tag-btn" data-tag="Peace" type="button">Peace</button>
+        <button class="tag-btn" data-tag="Healing" type="button">Healing</button>
+        <button class="tag-btn" data-tag="Strength" type="button">Strength</button>
+        <button class="tag-btn" data-tag="Grief" type="button">Grief</button>
+        <button class="tag-btn" data-tag="Gratitude" type="button">Gratitude</button>
+        <button class="tag-btn" data-tag="Courage" type="button">Courage</button>
+        <button class="tag-btn" data-tag="Someone I love" type="button">Someone I love</button>
+      </div>
+      <button class="light-btn" id="lightCandle" type="button">
+        <span>Light a candle</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="candle-count">
+    <div class="count-inner">
+      <span class="count-flame">Candle</span>
+      <span class="count-text"><span class="count-num" id="countNum">0</span> candles burning in this room</span>
+    </div>
+  </section>
+
+  <section class="room">
+    <div class="room-label">Flames burning now</div>
+    <div class="candles-grid" id="candlesGrid"></div>
+  </section>
+
+  <div class="strip">
+    <blockquote>"Verily, verily, I say unto you, ye are little children, and ye have not as yet understood how great blessings the Father hath in his own hands and prepared for you; and ye cannot bear all things now; nevertheless, be of good cheer, for I will lead you along."</blockquote>
+    <cite>Doctrine and Covenants 78:17-18</cite>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalIntention">
+    <div class="modal">
+      <div class="modal-flame">
+        <svg viewBox="0 0 36 60" xmlns="http://www.w3.org/2000/svg" overflow="visible" aria-hidden="true">
+          <ellipse cx="18" cy="56" rx="10" ry="4" fill="rgba(254,218,134,0.18)"/>
+          <path class="flame-outer" d="M18,4 C22,12 28,20 28,30 C28,42 24,50 18,54 C12,50 8,42 8,30 C8,20 14,12 18,4Z" fill="#e8a030" opacity=".8"/>
+          <path class="flame-inner" d="M18,14 C20,20 23,26 23,32 C23,40 21,46 18,50 C15,46 13,40 13,32 C13,26 16,20 18,14Z" fill="#feda86"/>
+          <line x1="18" y1="54" x2="18" y2="60" stroke="#9b7d61" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="modal-intention" id="modalIntention"></p>
+      <div class="modal-tag" id="modalTag"></div>
+      <div class="modal-verse">
+        <blockquote id="modalVerse"></blockquote>
+        <cite id="modalVerseRef"></cite>
+      </div>
+      <p class="modal-time" id="modalTime"></p>
+      <button class="modal-close" id="closeModal" type="button">Return to the room</button>
+    </div>
+  </div>
+
+  <footer>
+    <span class="fb">Come As You Are</span>
+    <ul class="fn">
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="quiet-space.html">Quiet Space</a></li>
+      <li><a href="encouragement.html">Encouragement</a></li>
+      <li><a href="candle-room.html">Candle Room</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <p class="fc">&copy; 2026 Lesedi Pride Iketleng &middot; WDD 231 &middot; calm, honest, reflective, and welcoming</p>
+    <div class="footer-utility">
+      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+</body>
+</html>

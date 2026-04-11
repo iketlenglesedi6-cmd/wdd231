@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Share a prayer request or reflection in a calm and welcoming space."
+  >
+  <title>Prayer Form - Come As You Are</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles/prayer-form.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/prayer-form.js" defer></script>
+</head>
+<body>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+
+  <nav class="sanctuary-nav">
+    <a href="index.html" class="nav-logo nl">
+      <img src="images/favicon-tree.svg" alt="Come As You Are logo" width="36" height="36">
+      <span class="nav-logo-text nt">Come As You Are</span>
+    </a>
+    <button class="nav-toggle tog" aria-label="Open sanctuary navigation" aria-expanded="false" aria-controls="sanctuary-menu" type="button">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links links" id="sanctuary-menu">
+      <li><a href="index.html" class="nav-link-home">Home</a></li>
+      <li class="nav-group active">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Carry<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Name what you are carrying</span>
+          <div class="nav-panel-links">
+            <a href="reflection.html"><strong>Reflection</strong><span>A guided, honest check-in.</span></a>
+            <a href="prayer-form.html" class="active"><strong>Prayer Request</strong><span>Lay it down in words and prayer.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Receive<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Gentle words for the road</span>
+          <div class="nav-panel-links">
+            <a href="encouragement.html"><strong>Encouragement</strong><span>A steady word for right now.</span></a>
+            <a href="daily-bread.html"><strong>Daily Bread</strong><span>A verse to carry through today.</span></a>
+            <a href="scripture-vault.html"><strong>Scripture Vault</strong><span>Search the library by feeling or theme.</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-group">
+        <button class="nav-group-trigger" type="button" aria-expanded="false">Rest<span class="nav-group-arrow" aria-hidden="true"></span></button>
+        <div class="nav-panel">
+          <span class="nav-panel-label">Stay, breathe, and be still</span>
+          <div class="nav-panel-links">
+            <a href="quiet-space.html"><strong>Quiet Space</strong><span>Write without being rushed.</span></a>
+            <a href="breath.html"><strong>Breath</strong><span>Slow down with guided stillness.</span></a>
+            <a href="candle-room.html"><strong>Candle Room</strong><span>Light a candle for what matters.</span></a>
+          </div>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link-about">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <header class="ph">
+      <div class="pl">Prayer Request</div>
+      <h1>Share what is<br><em>on your heart.</em></h1>
+      <p>This is a quiet space to name what you are carrying.<br>Nothing you write here is too heavy or too small.</p>
+    </header>
+
+    <section class="verse-card">
+      <blockquote>"Call to me and I will answer you and tell you great and unsearchable things you do not know."</blockquote>
+      <cite>Jeremiah 33:3</cite>
+    </section>
+
+    <section class="form-card">
+      <form id="prayerForm" novalidate>
+        <div class="form-section">
+          <label class="form-label" for="firstName">Your first name <span>*</span></label>
+          <input class="form-input" type="text" id="firstName" name="firstName" placeholder="What do you go by..." autocomplete="given-name">
+          <p class="field-error" id="err-firstName">Please enter your first name.</p>
+        </div>
+
+        <div class="form-section">
+          <label class="form-label" for="email">Your email <span>(optional)</span></label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="Only if you would like a response..." autocomplete="email">
+          <p class="field-error" id="err-email">Please enter a valid email address.</p>
+        </div>
+
+        <div class="form-section">
+          <label class="form-label" for="prayerType">What kind of prayer is this? <span>*</span></label>
+          <select class="form-select" id="prayerType" name="prayerType">
+            <option value="">Choose what feels closest...</option>
+            <option value="personal">For myself</option>
+            <option value="someone">For someone I love</option>
+            <option value="healing">For healing</option>
+            <option value="guidance">For guidance or direction</option>
+            <option value="grief">For grief or loss</option>
+            <option value="gratitude">A prayer of gratitude</option>
+            <option value="other">Something else</option>
+          </select>
+          <p class="field-error" id="err-prayerType">Please choose a prayer type.</p>
+        </div>
+
+        <div class="form-section">
+          <label class="form-label" for="prayerText">Your prayer or request <span>*</span></label>
+          <textarea class="form-textarea" id="prayerText" name="prayerText" maxlength="1000" placeholder="Say it how it comes. There is no wrong way to begin..."></textarea>
+          <p class="char-note"><span id="charCount">0</span> / 1000</p>
+          <p class="field-error" id="err-prayerText">Please share something, even a few words.</p>
+        </div>
+
+        <div class="form-section">
+          <p class="form-label">What would help most right now?</p>
+          <div class="check-group">
+            <label class="check-item">
+              <input type="checkbox" name="needs" value="scripture">
+              <span class="check-item-label">A verse to hold onto</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="needs" value="quiet">
+              <span class="check-item-label">A quiet space to sit with this</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="needs" value="words">
+              <span class="check-item-label">Help finding the words to pray</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="needs" value="nothing">
+              <span class="check-item-label">Nothing, I just needed to say it</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <p class="form-label">May I share this anonymously with others in the community?</p>
+          <div class="check-group">
+            <label class="check-item">
+              <input type="radio" name="shareConsent" value="yes">
+              <span class="check-item-label">Yes, knowing others are praying with me would bring comfort</span>
+            </label>
+            <label class="check-item">
+              <input type="radio" name="shareConsent" value="no" checked>
+              <span class="check-item-label">No, this is just between me and God</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="privacy-note">
+          <svg class="privacy-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 1L2 3.5V8c0 3.3 2.4 5.7 6 7 3.6-1.3 6-3.7 6-7V3.5L8 1z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"></path>
+            <path d="M5.5 8l1.5 1.5L10.5 6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+          <p class="privacy-text">Your prayer is received with care. This page currently keeps everything in the browser only, which makes it a safe place to draft while we decide on the API connection.</p>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="bp"><span>Submit my prayer</span></button>
+          <a href="index.html" class="bs">Return home</a>
+        </div>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <span class="fb">Come As You Are</span>
+    <ul class="fn">
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="quiet-space.html">Quiet Space</a></li>
+      <li><a href="encouragement.html">Encouragement</a></li>
+      <li><a href="prayer-form.html">Prayer Form</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <p class="fc">&copy; 2026 Lesedi Pride Iketleng &middot; WDD 231 &middot; calm, honest, reflective, and welcoming</p>
+    <div class="footer-utility">
+      <a href="#" title="Replace this placeholder with your public YouTube or Loom URL">Video Walkthrough</a>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+</body>
+</html>
