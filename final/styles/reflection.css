@@ -172,16 +172,35 @@ footer { position: relative; z-index: 1; padding: 48px 48px 36px; display: flex;
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-@media (max-width: 640px) {
-  nav { padding: 20px 24px; }
-  .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: rgba(250,244,236,0.97); border-bottom: 1px solid var(--border); padding: 24px; gap: 20px; }
-  .nav-links.open { display: flex; }
-  .nav-toggle { display: flex; }
-  .choices { grid-template-columns: 1fr; }
-  .response-card { padding: 32px 20px; }
-  .page-header { padding: 120px 24px 60px; }
-  .reflection-container { padding: 0 24px 80px; }
-  footer { padding: 40px 24px 32px; }
-  .footer-nav { flex-wrap: wrap; justify-content: center; gap: 14px; }
-}
+ @media (max-width: 768px) {
+      nav { padding: 20px 24px; }
 
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        flex-direction: column;
+        background: rgba(250,244,236,0.97);
+        border-bottom: 1px solid var(--border);
+        padding: 24px;
+        gap: 20px;
+      }
+
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: flex; }
+
+      .paths-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .path-card { padding: 36px 28px 32px; }
+
+      .hero { padding: 100px 24px 80px; }
+
+      .scripture-strip { padding: 56px 24px; }
+      .home-about-whisper { padding: 24px 24px 4px; }
+
+      footer { padding: 48px 24px 36px; }
+      .footer-nav { flex-wrap: wrap; justify-content: center; gap: 16px; }
+    }

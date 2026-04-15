@@ -101,6 +101,10 @@
 
 .sanctuary-nav {
   gap: 24px;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sanctuary-nav .nav-logo,
@@ -108,10 +112,18 @@
   flex-shrink: 0;
 }
 
+.sanctuary-nav .nav-logo img,
+.sanctuary-nav .nl img {
+  width: 36px;
+  height: 36px;
+  display: block;
+  object-fit: contain;
+}
+
 .sanctuary-nav .nav-logo-text,
 .sanctuary-nav .nt {
-  font-size: 16px;
-  letter-spacing: 0.05em;
+  font-size: 17px;
+  letter-spacing: 0.04em;
 }
 
 .sanctuary-nav .nav-links,
@@ -338,7 +350,8 @@
 
 @media (max-width: 760px) {
   .sanctuary-nav {
-    align-items: flex-start;
+    align-items: center;
+    padding: 20px 24px;
   }
 
   .sanctuary-nav .nav-links,
@@ -424,8 +437,8 @@
 @media (max-width: 420px) {
   .sanctuary-nav .nav-logo-text,
   .sanctuary-nav .nt {
-    font-size: 14px;
-    letter-spacing: 0.03em;
+    font-size: 17px;
+    letter-spacing: 0.04em;
   }
 
   .footer-utility a {
@@ -500,6 +513,181 @@
   .footer-nav a {
     overflow-wrap: anywhere;
     word-break: break-word;
+  }
+
+  .sanctuary-nav { gap: 24px; padding: 20px 24px; align-items: center; }
+
+  .sanctuary-nav .nav-logo,
+  .sanctuary-nav .nl {
+    min-width: 0;
+  }
+
+  .sanctuary-nav .nav-logo img,
+  .sanctuary-nav .nl img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sanctuary-nav .nav-links,
+  .sanctuary-nav .links {
+    padding: 24px;
+  }
+
+  .page,
+  .main,
+  .ph,
+  .strip,
+  footer,
+  .left,
+  .right,
+  .reflection-container,
+  .main-card-wrap,
+  .streak-wrap,
+  .section,
+  .saved-section,
+  .light-form,
+  .room {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-card,
+  .main-card,
+  .light-form-inner,
+  .modal,
+  .response-card,
+  .summary-card,
+  .form-card,
+  .breath-card,
+  .verse-card,
+  .vc {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .paths-grid,
+  .values,
+  .verses-grid,
+  .vault-grid,
+  .choices,
+  .saved-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .week-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stage {
+    width: min(100%, 260px);
+    height: min(100vw - 72px, 260px);
+  }
+
+  .gr1 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .gr2 {
+    width: 205px;
+    height: 205px;
+  }
+
+  .gr3 {
+    width: 248px;
+    height: 248px;
+  }
+
+  .breath-circle {
+    width: 130px;
+    height: 130px;
+  }
+
+  .jta {
+    min-height: 220px;
+    padding: 18px 16px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .bp,
+  .bs,
+  .btn-primary,
+  .btn-secondary,
+  .light-btn,
+  .start-btn,
+  .pat-btn,
+  .tbtn,
+  .modal-close {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .music-toggle .music-text,
+  .sep,
+  .sem {
+    white-space: normal;
+  }
+
+  .sep,
+  .sem,
+  .date-full,
+  .count-text,
+  .count-flame,
+  .streak-label {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .date-pill,
+  .count-inner,
+  .streak-bar {
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .date-sep {
+    display: none;
+  }
+
+  .date-full,
+  .count-text,
+  .count-flame {
+    letter-spacing: 0.12em;
+  }
+
+  .streak-days {
+    margin-left: 0;
+  }
+
+  .complete-banner {
+    left: 8px;
+    right: 8px;
+    width: auto;
+    padding: 12px 14px;
+    transform: translateY(-8px);
+  }
+
+  .complete-banner.show {
+    transform: translateY(0);
+  }
+
+  .pl,
+  .lbl,
+  .page-label,
+  .section-label,
+  .step-number,
+  .room-label {
+    letter-spacing: 0.16em;
+  }
+
+  .room-label::before,
+  .room-label::after,
+  .section-label::after {
+    display: none;
   }
 }
 
